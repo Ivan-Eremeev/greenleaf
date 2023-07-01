@@ -3,22 +3,22 @@
 @include reset(); // Сброс стилей
 
 // Переменные для кастомизации Bootstrap 5
-$grid-gutter-width: 15px; // Отступы между колонками
+$grid-gutter-width: 40px; // Отступы между колонками
 $grid-columns: 12; // Колличество колонок
 $grid-breakpoints: ( // Брейкпоинты
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  xl: 1150px,
+  xxl: 1220px
 ) !default;
 $container-max-widths: ( // Максимальная ширина контейнера
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  xl: 1100px,
+  xxl: 1160px
 ) !default;
 $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
 
@@ -65,6 +65,7 @@ $secondary_color_hover: #004E7A;
 
 // Подключение файлов
 @import 'blocks/settings';
+@import 'blocks/btn';
 @import 'hamburgers/hamburgers';
 // @import 'blocks/template';
 // @import 'blocks/popup';

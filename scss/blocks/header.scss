@@ -1,6 +1,156 @@
 /* header */
 .header { 
-  
+  &__top {
+    padding: 12px 0;
+    background-color: $primary_color;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__middle {
+    padding: 35px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__bottom {
+    .container {
+      display: flex;
+    }
+  }
+  &__info {
+    margin-right: auto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  &__social {
+    margin-right: 32px;
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: -16px;
+      margin-top: -16px;
+      li {
+        margin-left: 16px;
+        margin-top: 16px;
+        a {
+          fill: #fff;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+  &__login {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    ul {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__logo {
+    
+  }
+  &__menu {
+    ul {
+      display: flex;
+      align-items: center;
+      margin-left: -24px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      li {
+        margin-left: 24px;
+        a {
+          color: $secondary_color;
+          position: relative;
+          &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $primary_color;
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            opacity: 0;
+            pointer-events: none;
+          }
+          @include media-breakpoint-up(md) {
+            &:hover {
+              color: $primary_color;
+            }
+          }
+          &.active {
+            color: $primary_color;
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__tel {
+    
+  }
+  &__controll {
+    display: flex;
+  }
+  &__controll-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: #F8F8F8;
+      }
+    }
+  }
+  &__controll-icon {
+    
+  }
+  &__catalog-btn {
+    .btn {
+      border-radius: 0;
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 0;
+        margin-left: 8px;
+      }
+    }
+  }
+  &__search {
+    flex-grow: 1;
+    input {
+      width: 100%;
+      height: 100%;
+      border: 1px solid $border_color;
+      padding: 0 40px 0 13px;
+    }
+  }
 }
 
 // stiky menu
