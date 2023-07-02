@@ -35,7 +35,7 @@
     }
   }
   &--green-border {
-    background-color: #fff;
+    background-color: transparent;
     border-color: $primary_color;
     fill: $text_color;
     color: $text_color;
@@ -48,6 +48,17 @@
       pointer-events: none;
       color: $gray_color;
       border-color: $border_color;
+    }
+  }
+  &--white-border {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: #fff;
+        color: $text_color_light;
+      }
     }
   }
 }

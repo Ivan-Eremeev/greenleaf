@@ -1,0 +1,59 @@
+extends core/base.pug
+
+block title 
+  title Главная
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // welcome
+      .welcome
+        .welcome__slider 
+          #sliderWelcome 
+            .swiper-wrapper 
+
+              .swiper-slide 
+                .welcome__block 
+                  .container 
+                    .welcome__img 
+                      img(src="img/welcome-slider/img-1.jpg", alt="")
+                    .welcome__content 
+                      .welcome__title Высокотехнологичное производство
+                      .welcome__text Мы постоянно работаем над усовершенствованием нашей продукции и технологии
+                      .welcome__controll 
+                        .welcome__btn 
+                          a(href="#").btn.btn--white-border Подробнее
+                        .welcome__arrows 
+                          .welcome__arrow.welcome__arrow--prev.swiper-button-prev 
+                            svg(class="icon-arrow-middle")
+                              use(xlink:href="img/sprite.svg#arrow-middle")
+                          .welcome__arrow.welcome__arrow--next.swiper-button-next 
+                            svg(class="icon-arrow-middle")
+                              use(xlink:href="img/sprite.svg#arrow-middle")
+
+              .swiper-slide 
+                .welcome__block 
+                  .container 
+                    .welcome__img 
+                      img(src="img/welcome-slider/img-2.jpg", alt="")
+                    .welcome__content 
+                      .welcome__title Природа на службе вашего здоровья и процветания
+                      .welcome__text С самого начала своего развития наша компания ориентирована на самые высокие технологии.
+                      .welcome__controll 
+                        .welcome__btn 
+                          a(href="#").btn.btn--white-border Подробнее
+                        .welcome__arrows 
+                          .welcome__arrow.welcome__arrow--prev.swiper-button-prev 
+                            svg(class="icon-arrow-middle")
+                              use(xlink:href="img/sprite.svg#arrow-middle")
+                          .welcome__arrow.welcome__arrow--next.swiper-button-next 
+                            svg(class="icon-arrow-middle")
+                              use(xlink:href="img/sprite.svg#arrow-middle")
+      // /welcome
+
+    include core/footer.pug

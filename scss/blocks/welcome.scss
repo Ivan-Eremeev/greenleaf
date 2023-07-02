@@ -1,0 +1,92 @@
+/* welcome */
+.welcome { 
+  &__slider {
+    height: auto;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 724px;
+    background-color: $gray_color;
+    .container {
+      margin-top: auto;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    max-width: 748px;
+    padding: 120px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    max-width: 450px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 48px;
+  }
+  &__controll {
+    display: flex;
+  }
+  &__btn {
+    .btn {
+      margin-right: 40px;
+    }
+  }
+  &__arrows {
+    display: flex;
+  }
+  &__arrow {
+    width: 56px;
+    height: 100%;
+    position: static;
+    border: 1px solid #fff;
+    margin-top: 0;
+    border-radius: 4px;
+    fill: #fff;
+    transition: .3s;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    &:after {
+      display: none;
+    }
+    &--prev {
+      margin-right: 8px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    &--next {
+      
+    }
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: #fff;
+        fill: $text_color_light;
+      }
+    }
+  }
+}
+/* /welcome */

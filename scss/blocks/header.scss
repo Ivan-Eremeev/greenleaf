@@ -1,5 +1,11 @@
 /* header */
 .header { 
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   &__top {
     padding: 12px 0;
     background-color: $primary_color;
@@ -292,6 +298,7 @@
       position: absolute;
       top: 0;
       right: 0;
+      transition: .1s;
       svg {
         width: 16px;
         height: 16px;
@@ -308,11 +315,23 @@
 // stiky menu
 #headerSticky {
   &.sticky {
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     animation: showStyky 0.5s;
+    @include media-breakpoint-up(md) {
+      .header__top {
+        display: none;
+      }
+      .header__bottom {
+        display: none;
+      }
+      .header__middle {
+        padding: 10px 0;
+      }
+    }
   }
 }
 @keyframes showStyky {
