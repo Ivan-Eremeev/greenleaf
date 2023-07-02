@@ -11,14 +11,14 @@ $grid-breakpoints: ( // Брейкпоинты
   md: 768px,
   lg: 992px,
   xl: 1150px,
-  xxl: 1220px
+  xxl: 1250px
 ) !default;
 $container-max-widths: ( // Максимальная ширина контейнера
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1100px,
-  xxl: 1160px
+  xxl: 1248px
 ) !default;
 $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
 

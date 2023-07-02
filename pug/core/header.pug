@@ -61,16 +61,22 @@ header#headerSticky.header
             use(xlink:href="img/sprite.svg#grid")
             
       form(action="#").header__search 
-        input(type="text")
+        input(type="text" placeholder="Найти...")
         button(type="submit")
+          svg(class="icon-search")
+            use(xlink:href="img/sprite.svg#search")
 
       .header__controll 
         .header__controll-item 
           | Избранное
           .header__controll-icon 
             span 9
+            svg(class="icon-heart")
+              use(xlink:href="img/sprite.svg#heart")
         .header__controll-item 
-          | Избранное
+          | Корзина
           .header__controll-icon 
+            svg(class="icon-cart")
+              use(xlink:href="img/sprite.svg#cart")
             span 1
 //	/header
