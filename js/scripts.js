@@ -104,7 +104,7 @@ window.onload = function () {
     });
   }
 
-  // Swiper | Слайдер приветствия на главной
+  // Swiper | Слайдер "бренды"
   if ($('#sliderBrabds').length) {
     const sliderBrabds = new Swiper('#sliderBrabds', {
       slidesPerView: 2,
@@ -135,6 +135,19 @@ window.onload = function () {
           spaceBetween: 64,
         },
       }
+    });
+  }
+
+  // Swiper | Слайдер карточек товара
+  if ($('#sliderCards').length) {
+    const sliderCards = new Swiper('#sliderCards', {
+      slidesPerView: 3,
+      threshold: 3,
+      spaceBetween: 40,
+      navigation: {
+        prevEl: '.cards-slider__arrow--prev',
+        nextEl: '.cards-slider__arrow--next',
+      },
     });
   }
 

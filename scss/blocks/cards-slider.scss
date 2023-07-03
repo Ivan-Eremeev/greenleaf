@@ -1,0 +1,37 @@
+/* cards-slider */
+.cards-slider { 
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    .subtitle {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+  }
+  &__controll {
+    display: flex;
+    align-items: center;
+  }
+  &__more {
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: $secondary_color;
+  }
+  &__arrows {
+    display: flex;
+  }
+  &__arrow {
+    position: static;
+  }
+  &__slider {
+    #sliderCards {
+      margin: -20px;
+      padding: 20px;
+      overflow: hidden;
+    }
+  }
+}
+/* /cards-slider */

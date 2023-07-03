@@ -4,6 +4,9 @@
   font-weight: 600;
   line-height: 38px;
   margin-bottom: 48px;
+  &--blue {
+    color: $secondary_color;
+  }
   @include media-breakpoint-down(md) {
     margin-bottom: 30px;
   }

@@ -1,0 +1,102 @@
+/* card-product */
+.card-product { 
+  display: block;
+  padding: 18px 24px 24px;
+  color: $text_color_light;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 30, 69, 0.10);
+  transition: 0.3s;
+  @include media-breakpoint-up(md) {
+    &:hover {
+      box-shadow: 0px 10px 20px rgba(0, 30, 69, 0.20);
+    }
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__stickers {
+    display: flex;
+  }
+  &__sticker {
+    padding: 8px 12px;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    &--green {
+      background-color: $primary_color;
+      color: #fff;
+    }
+    &--green-border {
+      border-color: $primary_color;
+      color: $primary_color;
+    }
+  }
+  &__favorite {
+    transition: .3s;
+    label {
+      display: block;
+      cursor: pointer;
+      user-select: none;
+      padding: 10px 0 10px 10px;
+    }
+    span {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.08 12.8638L8 12.9401L7.912 12.8638C4.112 9.57548 1.6 7.40109 1.6 5.19619C1.6 3.6703 2.8 2.52589 4.4 2.52589C5.632 2.52589 6.832 3.28883 7.256 4.32643H8.744C9.168 3.28883 10.368 2.52589 11.6 2.52589C13.2 2.52589 14.4 3.6703 14.4 5.19619C14.4 7.40109 11.888 9.57548 8.08 12.8638ZM11.6 1C10.208 1 8.872 1.61798 8 2.58692C7.128 1.61798 5.792 1 4.4 1C1.936 1 0 2.83869 0 5.19619C0 8.07248 2.72 10.43 6.84 13.9929L8 15L9.16 13.9929C13.28 10.43 16 8.07248 16 5.19619C16 2.83869 14.064 1 11.6 1Z' fill='%23B0B0B0'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    input {
+      position: absolute;
+      visibility: hidden;
+      &:checked {
+        ~ span {
+          background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.6 1C10.208 1 8.872 1.61798 8 2.58692C7.128 1.61798 5.792 1 4.4 1C1.936 1 0 2.83869 0 5.19618C0 8.07248 2.72 10.43 6.84 13.9929L8 15L9.16 13.9929C13.28 10.43 16 8.07248 16 5.19618C16 2.83869 14.064 1 11.6 1Z' fill='%23FA4A4A'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+    @include media-breakpoint-up(md) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__img {
+    height: 224px;
+    margin-bottom: 16px;
+    img {
+      max-height: 100%;
+    }
+  }
+  &__price {
+    font-size: 22px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $secondary_color;
+    margin-bottom: 16px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 48px;
+  }
+  &__btn {
+    .btn {
+      width: 100%;
+    }
+  } 
+}
+/* /card-product */

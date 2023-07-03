@@ -1,0 +1,23 @@
+mixin card-product()
+  a(href="#").card-product 
+
+    .card-product__top 
+
+      .card-product__stickers 
+        .card-product__sticker.card-product__sticker--green Новинка
+        .card-product__sticker.card-product__sticker--green-border PV
+
+      .card-product__favorite 
+        label 
+          input(type="checkbox", name="favorite")
+          span 
+
+    .card-product__img 
+      img(src="img/products/img-1.jpg", alt="")
+
+    .card-product__price 1 200 ₽
+
+    .card-product__title Пробиотики из сухого верблюжьего молока TUODADA
+
+    .card-product__btn 
+      button.btn.btn--blue Купить
