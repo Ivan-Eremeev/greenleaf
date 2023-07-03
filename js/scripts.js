@@ -93,7 +93,7 @@ window.onload = function () {
       threshold: 3,
       effect: 'fade',
       loop: true,
-      speed: 2000,
+      speed: 1500,
       autoplay: {
         delay: 5000,
       },
@@ -144,6 +144,18 @@ window.onload = function () {
   //     });
   //   })
   // }
+
+  // Всплывающий текст в блоке "benefit"
+  function benefitTextSlide() {
+    let block = $('.benefit__block');
+    block.on("mouseenter", function () {
+      $(this).find('.benefit__text').stop().slideDown(400);
+    });
+    block.on("mouseleave", function () {
+      $(this).find('.benefit__text').stop().slideUp(400);
+    })
+  }
+  benefitTextSlide();
 
   // // Air Datepicker | Календарь
   // new AirDatepicker('#airDatepicker', {

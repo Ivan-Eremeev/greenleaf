@@ -6173,6 +6173,7 @@ textarea,
 select {
   font-family: "Futura", Arial, sans-serif;
   font-size: 16px;
+  line-height: 24px;
   color: #333533;
 }
 
@@ -6181,6 +6182,7 @@ body {
   background-color: #fff;
   font-family: "Futura", Arial, sans-serif;
   font-size: 16px;
+  line-height: 24px;
   color: #333533;
 }
 body.lock {
@@ -6956,5 +6958,73 @@ body.lock {
 }
 
 /* /welcome */
+/* benefit */
+.benefit__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 456px;
+  padding: 80px 120px;
+  position: relative;
+  color: #fff;
+}
+.benefit__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.benefit__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.benefit__content {
+  max-width: 500px;
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+.benefit__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+.benefit__text {
+  display: none;
+}
+.benefit__text p {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.benefit__text ul li {
+  padding-left: 15px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.benefit__text ul li:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.benefit__text ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* /benefit */
 /* footer */
 /* /footer */
