@@ -19,6 +19,11 @@
     font-weight: 600;
     line-height: 20px;
     color: $secondary_color;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        color: $primary_color;
+      }
+    }
   }
   &__arrows {
     display: flex;

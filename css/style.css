@@ -6511,15 +6511,14 @@ body.lock {
   width: 24px;
   height: 24px;
   margin-top: 0;
+  fill: #00598B;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
-.swiper-button-prev:before {
-  content: "";
+.swiper-button-prev svg {
   display: block;
   width: 8px;
   height: 14px;
-  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C-0.097631 0.683417 -0.097631 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.097631 12.6834 -0.097631 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7.70711 7.70711C8.09763 7.31658 8.09763 6.68342 7.70711 6.29289L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893Z' fill='%2300598B'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-size: contain;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -6527,23 +6526,32 @@ body.lock {
 .swiper-button-prev:after {
   display: none;
 }
+@media (min-width: 768px) {
+  .swiper-button-prev:hover {
+    fill: #50BD38;
+  }
+}
 
 .swiper-button-next {
   width: 24px;
   height: 24px;
   margin-top: 0;
+  fill: #00598B;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
-.swiper-button-next:before {
-  content: "";
+.swiper-button-next svg {
   display: block;
   width: 8px;
   height: 14px;
-  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C-0.097631 0.683417 -0.097631 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.097631 12.6834 -0.097631 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7.70711 7.70711C8.09763 7.31658 8.09763 6.68342 7.70711 6.29289L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893Z' fill='%2300598B'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .swiper-button-next:after {
   display: none;
+}
+@media (min-width: 768px) {
+  .swiper-button-next:hover {
+    fill: #50BD38;
+  }
 }
 
 /* header */
@@ -7194,6 +7202,11 @@ body.lock {
   font-weight: 600;
   line-height: 20px;
   color: #00598B;
+}
+@media (min-width: 768px) {
+  .cards-slider__more:hover {
+    color: #50BD38;
+  }
 }
 .cards-slider__arrows {
   display: -webkit-box;
