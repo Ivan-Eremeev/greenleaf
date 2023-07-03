@@ -1,0 +1,11 @@
+/* subtitle */
+.subtitle { 
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 48px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+  }
+}
+/* /subtitle  */

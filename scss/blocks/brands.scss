@@ -1,0 +1,43 @@
+/* brands */
+.brands { 
+  &__slider {
+    padding: 0 60px;
+    position: relative;
+    #sliderBrabds {
+      overflow: hidden;
+    }
+    .swiper-slide {
+      height: auto;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  &__pagination {
+    
+  }
+  @include media-breakpoint-down(xxl) {
+    &__slider {
+      padding: 0 40px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__slider {
+      padding: 0 30px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__slider {
+      padding: 0 20px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__slider {
+      padding: 0 10px;
+    }
+  }
+}
+/* /brands */

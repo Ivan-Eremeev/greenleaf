@@ -104,6 +104,40 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Слайдер приветствия на главной
+  if ($('#sliderBrabds').length) {
+    const sliderBrabds = new Swiper('#sliderBrabds', {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      pagination: {
+        el: '.brands__pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        769: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+        1150: {
+          slidesPerView: 7,
+          spaceBetween: 64,
+        },
+        1250: {
+          slidesPerView: 9,
+          spaceBetween: 64,
+        },
+      }
+    });
+  }
+
   // // Swiper | Слайдер (множество одинаковых слайдеров)
   // if ($('.js-slider-wrapper').length) {
   //   const Swipers = Array.from(document.querySelectorAll('.js-slider-wrapper'), n => {

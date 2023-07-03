@@ -1,7 +1,10 @@
 /* welcome */
 .welcome { 
   &__slider {
-    height: auto;
+    overflow: hidden;
+    .swiper-slide {
+      height: auto;
+    }
   }
   &__block {
     display: flex;
@@ -32,10 +35,7 @@
     position: relative;
     z-index: 1;
   }
-  &__title {
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 54px;
+  .title {
     margin-bottom: 16px;
   }
   &__text {

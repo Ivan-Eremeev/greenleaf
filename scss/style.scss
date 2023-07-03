@@ -65,8 +65,12 @@ $secondary_color_hover: #004E7A;
 
 // Подключение файлов
 @import 'blocks/settings';
-@import 'blocks/btn';
 @import 'hamburgers/hamburgers';
+@import 'blocks/btn';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/section';
+@import 'blocks/swiper-castom';
 // @import 'blocks/template';
 // @import 'blocks/popup';
 // @import 'blocks/tabs';
@@ -76,6 +80,7 @@ $secondary_color_hover: #004E7A;
 @import 'blocks/header';
 @import 'blocks/welcome';
 @import 'blocks/benefit';
+@import 'blocks/brands';
 
 @import 'blocks/footer';
 // @import 'blocks/menu';

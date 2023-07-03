@@ -23,7 +23,7 @@ block content
                     .welcome__img 
                       img(src="img/welcome-slider/img-1.jpg", alt="")
                     .welcome__content 
-                      .welcome__title Высокотехнологичное производство
+                      .title Высокотехнологичное производство
                       .welcome__text Мы постоянно работаем над усовершенствованием нашей продукции и технологии
                       .welcome__controll 
                         .welcome__btn 
@@ -42,7 +42,7 @@ block content
                     .welcome__img 
                       img(src="img/welcome-slider/img-2.jpg", alt="")
                     .welcome__content 
-                      .welcome__title Природа на службе вашего здоровья и процветания
+                      .title Природа на службе вашего здоровья и процветания
                       .welcome__text С самого начала своего развития наша компания ориентирована на самые высокие технологии.
                       .welcome__controll 
                         .welcome__btn 
@@ -57,14 +57,14 @@ block content
       // /welcome
 
       // benefit
-      .benefit
+      section.benefit.section
         .row.g-0
           .col-md-6 
             .benefit__block
               .benefit__img 
                 img(src="img/benefit/img-1.jpg", alt="") 
               .benefit__content 
-                .benefit__title Быстрый старт бизнеса
+                h2.subtitle Быстрый старт бизнеса
                 .benefit__text 
                   p Мы поможем все организовать для успешного старта вашего бизнеса и для этого у нас есть:
                   ul 
@@ -75,7 +75,7 @@ block content
               .benefit__img 
                 img(src="img/benefit/img-2.jpg", alt="") 
               .benefit__content 
-                .benefit__title Финансовая свобода
+                h2.subtitle Финансовая свобода
                 .benefit__text 
                   p Мы поможем все организовать для успешного старта вашего бизнеса и для этого у нас есть:
                   ul 
@@ -86,7 +86,7 @@ block content
               .benefit__img 
                 img(src="img/benefit/img-3.jpg", alt="") 
               .benefit__content 
-                .benefit__title Экологическая продукция
+                h2.subtitle Экологическая продукция
                 .benefit__text 
                   p Мы поможем все организовать для успешного старта вашего бизнеса и для этого у нас есть:
                   ul 
@@ -97,12 +97,49 @@ block content
               .benefit__img 
                 img(src="img/benefit/img-4.jpg", alt="") 
               .benefit__content 
-                .benefit__title Команда лидеров
+                h2.subtitle Команда лидеров
                 .benefit__text 
                   p Мы поможем все организовать для успешного старта вашего бизнеса и для этого у нас есть:
                   ul 
                     li Удобные инструменты, для получения внушительных доходов
                     li Велком-пакет включающий в себя план развития, опытное комьюнити и многое другое
       // /benefit
+
+      // brands
+      section.brands.section
+        .container 
+          h2.subtitle Наши бренды:
+        .brands__slider 
+          #sliderBrabds 
+            .swiper-wrapper 
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-1.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-2.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-3.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-4.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-5.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-6.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-7.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-8.png", alt="")
+              .swiper-slide 
+                .brands__item 
+                  img(src="img/brands/img-9.png", alt="")
+          .brands__pagination.swiper-pagination
+      // /brands
 
     include core/footer.pug
