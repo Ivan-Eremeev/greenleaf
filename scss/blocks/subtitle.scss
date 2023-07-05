@@ -7,6 +7,9 @@
   &--blue {
     color: $secondary_color;
   }
+  &--white {
+    color: #fff;
+  }
   @include media-breakpoint-down(md) {
     margin-bottom: 30px;
   }

@@ -1,0 +1,29 @@
+// cards-slider
+.cards-slider.section
+  .container 
+    .cards-slider__head 
+      h2.subtitle.subtitle--blue Новинки
+      .cards-slider__controll 
+        a(href="#").cards-slider__more Смотреть все
+        .cards-slider__arrows 
+          .cards-slider__arrow.cards-slider__arrow--prev.swiper-button-prev 
+            svg(class="icon-arrow")
+              use(xlink:href="img/sprite.svg#arrow")
+          .cards-slider__arrow.cards-slider__arrow--next.swiper-button-next 
+            svg(class="icon-arrow")
+              use(xlink:href="img/sprite.svg#arrow")
+    .cards-slider__slider 
+      .sliderCards 
+        .swiper-wrapper 
+          .swiper-slide 
+            include card-product.pug
+            +card-product
+          .swiper-slide 
+            +card-product
+          .swiper-slide 
+            +card-product
+          .swiper-slide 
+            +card-product
+          .swiper-slide 
+            +card-product
+// /cards-slider

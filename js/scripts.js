@@ -139,16 +139,18 @@ window.onload = function () {
   }
 
   // Swiper | Слайдер карточек товара
-  if ($('#sliderCards').length) {
-    const sliderCards = new Swiper('#sliderCards', {
-      slidesPerView: 3,
-      threshold: 3,
-      spaceBetween: 40,
-      navigation: {
-        prevEl: '.cards-slider__arrow--prev',
-        nextEl: '.cards-slider__arrow--next',
-      },
-    });
+  if ($('.sliderCards').length) {
+    const sliderCardsWrapper = Array.from(document.querySelectorAll('.cards-slider '), n => {
+      const sliderCards = new Swiper(n.querySelector('.sliderCards'), {
+        slidesPerView: 3,
+        threshold: 3,
+        spaceBetween: 40,
+        navigation: {
+          prevEl: n.querySelector('.cards-slider__arrow--prev'),
+          nextEl: n.querySelector('.cards-slider__arrow--next'),
+        },
+      });
+    })
   }
 
   // // Swiper | Слайдер (множество одинаковых слайдеров)
