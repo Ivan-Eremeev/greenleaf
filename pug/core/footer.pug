@@ -1,4 +1,51 @@
 // footer
 footer.footer
   .container
+    .footer__top 
+      .row.gy-3
+        .col-md-4 
+          a(href="#").footer__logo 
+            img(src="img/logo.svg", alt="")
+      
+        .col-md-8.d-flex
+          .footer__menu 
+            ul 
+              li 
+                a(href="#") Главная
+              li 
+                a(href="#") О компании
+              li 
+                a(href="#") Продукция
+              li 
+                a(href="#") Как начать свой бизнес
+              li 
+                a(href="#") Контакты
+
+          .footer__social 
+            ul 
+              li 
+                a(href="#") 
+                  svg(class="icon-vk")
+                    use(xlink:href="img/sprite.svg#vk")
+              li 
+                a(href="#") 
+                  svg(class="icon-telegram")
+                    use(xlink:href="img/sprite.svg#telegram")
+    .footer__bottom 
+      .row.gy-3 
+        .col-md-4 
+          .footer__copyright © 2023&nbsp;&nbsp;&nbsp;&nbsp;Greenleaf
+        .col-md-8 
+          .footer__links 
+            ul 
+              li 
+                a(href="#") Пользовательское соглашение
+              li 
+                a(href="#") О персональных данных
+            ul 
+              li 
+                a(href="#") Политика конфиденциальности
+              li 
+                a(href="#") Обработка файлов cookies
+
 //	/footer

@@ -130,6 +130,8 @@
     }
   }
   &__logo {
+    display: block;
+    max-width: 220px;
     margin-right: 80px;
     img {
       display: block;
