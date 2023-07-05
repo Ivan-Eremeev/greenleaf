@@ -305,28 +305,28 @@ window.onload = function () {
   //   });
   // }
 
-  // // Кнопка скролла вверх страницы
-  // function scrollUp() {
-  //   const btn = $('.js-scrollup');
-  //   $(window).scroll(function () {
-  //     btnShowFade();
-  //   });
-  //   function btnShowFade() {
-  //     if ($(this).scrollTop() > 200) {
-  //       btn.addClass('show');
-  //     } else {
-  //       btn.removeClass('show');
-  //     }
-  //   }
-  //   btnShowFade();
-  //   btn.click(function () {
-  //     $('body,html').animate({
-  //       scrollTop: 0
-  //     }, 500);
-  //     return false;
-  //   });
-  // }
-  // scrollUp();
+  // Кнопка скролл страницы вверх
+  function scrollUp() {
+    const btn = $('.js-scrollup');
+    $(window).scroll(function () {
+      btnShowFade();
+    });
+    function btnShowFade() {
+      if ($(this).scrollTop() > 500) {
+        btn.addClass('show');
+      } else if ($(this).scrollTop() < 100) {
+        btn.removeClass('show');
+      }
+    }
+    btnShowFade();
+    btn.click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 500);
+      return false;
+    });
+  }
+  scrollUp();
 
   // // Показать еще пункты списка
   // function showMoreFilters(list, count) {

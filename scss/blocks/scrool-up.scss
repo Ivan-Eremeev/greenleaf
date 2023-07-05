@@ -1,0 +1,36 @@
+/* scrool-up */
+.scrool-up { 
+  padding: 12px 12px;
+  border-radius: 40px;
+  background-color: $primary_color;
+  position: fixed;
+  bottom: 23px;
+  right: 24px;
+  fill: #fff;
+  cursor: pointer;
+  user-select: none;
+  z-index: 9;
+  opacity: 0;
+  transition: 0.3s;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  &__arrow {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+  &__dog {
+    
+  }
+  &.show {
+    opacity: 1;
+  }
+  @include media-breakpoint-up(md) {
+    &:hover {
+      background-color: $primary_color_hover;
+    }
+  }
+}
+/* /scrool-up */
