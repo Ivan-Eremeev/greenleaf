@@ -157,4 +157,28 @@ block content
 
       include blocks/cards-slider.pug
 
+      // news-tiles
+      section.news-tiles
+        .row.g-0 
+          .col-md-4 
+            a(href="#").news-tiles__block 
+              .news-tiles__content 
+                h2.subtitle Наши новости и акции
+                .news-tiles__link Посмотреть все
+          .col-md-4 
+            a(href="#").news-tiles__block 
+              .news-tiles__img 
+                img(src="img/news/img-1.jpg", alt="")
+              .news-tiles__content 
+                .news-tiles__title Визит Президента компании FAMALL в Казахстан г. Астана
+                .news-tiles__date 15 апреля 2023
+          .col-md-4 
+            a(href="#").news-tiles__block 
+              .news-tiles__img 
+                img(src="img/news/img-2.jpg", alt="")
+              .news-tiles__content 
+                .news-tiles__title Конференция по поводу визита Президента FAMALL Gavin Wang в Москве
+                .news-tiles__date 01 апреля 2023
+      // /news-tiles
+
     include core/footer.pug
