@@ -1,8 +1,14 @@
 /* section */
 .section { 
   margin-bottom: 80px;
+  &--mb120 {
+    margin-bottom: 120px;
+  }
   @include media-breakpoint-down(md) {
     margin-bottom: 40px;
+    &--mb120 {
+      margin-bottom: 80px;
+    }
   }
 }
 /* /section */

@@ -1,0 +1,77 @@
+extends core/base.pug
+
+block title 
+  title Каталог
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // offer
+      .offer
+        .container 
+          .offer__block 
+            .row.g-0 
+              .col-md-6 
+                .offer__content 
+                  .title Семейный набор
+                  .offer__text Начните ваш бизнес с нами с приобретения одного из Стартовых наборов
+                  .offer__btn 
+                    a(href="#").btn.btn--white-border Подробнее
+              .col-md-6 
+                .offer__img 
+                  img(src="img/offer.jpg", alt="")
+      // /offer
+
+      // catalog
+      .catalog.section
+        .container 
+          .row.gy-3
+            .col-md-4 
+              .catalog__block 
+                .catalog__img 
+                  img(src="img/catalogs/img-1.jpg", alt="")
+                .catalog__title Балловые товары
+            .col-md-4 
+              .catalog__block 
+                .catalog__img 
+                  img(src="img/catalogs/img-2.jpg", alt="")
+                .catalog__title Стартовые наборы
+            .col-md-4 
+              .catalog__block 
+                .catalog__img 
+                  img(src="img/catalogs/img-3.jpg", alt="")
+                .catalog__title Купонные товары
+      // /catalog
+
+      include blocks/cards-slider.pug
+      +cards-slider
+
+      // banner
+      .banner.section
+        .container 
+          .banner__block 
+            .banner__img 
+              img(src="img/leaves.png", alt="")
+            .banner__content 
+              .subtitle.subtitle--white Получите больше преимуществ работая с нами
+              a(href="#").banner__link Узнайте подробнее
+      // /banner
+
+      +cards-slider('section--mb120')
+
+      // scrool-up
+      .scrool-up.js-scrollup
+        .scrool-up__arrow 
+          svg(class="icon-arrow-middle")
+            use(xlink:href="img/sprite.svg#arrow-middle")
+        .scrool-up__dog 
+          svg(class="icon-dog")
+            use(xlink:href="img/sprite.svg#dog")
+      // /scrool-up
+
+    include core/footer.pug
