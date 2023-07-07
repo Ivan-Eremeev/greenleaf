@@ -88,5 +88,26 @@
       }
     }
   }
+  @include media-breakpoint-down(md) {
+    &__block {
+      min-height: 500px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__content {
+      padding: 60px 0;
+    }
+    &__controll {
+      flex-wrap: wrap;
+    }
+    &__btn {
+      width: 100%;
+      margin-bottom: 30px;
+      .btn {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
 }
 /* /welcome */

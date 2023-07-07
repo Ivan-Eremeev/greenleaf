@@ -58,5 +58,29 @@
       }
     }
   } 
+  @include media-breakpoint-down(xl) {
+    &__block {
+      padding: 80px 40px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__block {
+      min-height: 300px;
+      padding: 20px 20px;
+    }
+    .subtitle {
+      margin-bottom: 8px;
+    }
+    &__text {
+      p {
+        margin-bottom: 8px;
+      }
+      ul {
+        li {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
 }
 /* /benefit */

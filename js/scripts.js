@@ -1,21 +1,21 @@
 window.onload = function () {
 
   // Липкое меню.
-  function stikyMenu(header) {
-    let headerTop = header.offset().top;
-    headerToggleClass();
-    $(window).scroll(function () {
-      headerToggleClass();
-    });
-    function headerToggleClass() {
-      if ($(window).scrollTop() > headerTop + 300) {
-        header.addClass('sticky');
-      } else if ($(window).scrollTop() <= headerTop) {
-        header.removeClass('sticky');
-      }
-    }
-  };
-  stikyMenu($('#headerSticky'));
+  // function stikyMenu(header) {
+  //   let headerTop = header.offset().top;
+  //   headerToggleClass();
+  //   $(window).scroll(function () {
+  //     headerToggleClass();
+  //   });
+  //   function headerToggleClass() {
+  //     if ($(window).scrollTop() > headerTop + 300) {
+  //       header.addClass('sticky');
+  //     } else if ($(window).scrollTop() <= headerTop) {
+  //       header.removeClass('sticky');
+  //     }
+  //   }
+  // };
+  // stikyMenu($('#headerSticky'));
 
   // Выпадайки при клике по кнопке
   // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
@@ -142,13 +142,27 @@ window.onload = function () {
   if ($('.sliderCards').length) {
     const sliderCardsWrapper = Array.from(document.querySelectorAll('.cards-slider '), n => {
       const sliderCards = new Swiper(n.querySelector('.sliderCards'), {
-        slidesPerView: 3,
+        slidesPerView: 1,
         threshold: 3,
         spaceBetween: 40,
         navigation: {
           prevEl: n.querySelector('.cards-slider__arrow--prev'),
           nextEl: n.querySelector('.cards-slider__arrow--next'),
         },
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          769: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        }
       });
     })
   }

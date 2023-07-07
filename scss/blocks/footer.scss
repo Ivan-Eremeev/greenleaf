@@ -26,6 +26,7 @@
         a {
           font-weight: 600;
           color: $secondary_color;
+          white-space: nowrap;
           @include media-breakpoint-up(md) {
             &:hover {
               color: $primary_color;
@@ -36,18 +37,20 @@
     }
   }
   &__social {
+    margin: 8px 0;
     ul {
       display: flex;
       flex-wrap: wrap;
       margin-left: -16px;
-      margin-top: -16px;
+      margin-top: -8px;
       li {
         margin-left: 16px;
-        margin-top: 16px;
+        margin-top: 8px;
         a {
           flex-shrink: 0;
           fill: $secondary_color;
           svg {
+            display: block;
             width: 24px;
             height: 24px;
           }
@@ -81,6 +84,35 @@
           }
         }
       }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__menu {
+      text-align: center;
+      ul {
+        display: block;
+      }
+    }
+    &__social {
+      ul {
+        justify-content: center;
+      }
+    }
+    &__logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__top {
+      padding: 40px 0 20px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__bottom {
+      padding: 20px 0 40px;
+      text-align: center;
+    }
+    &__links {
+      justify-content: center;
     }
   }
 }

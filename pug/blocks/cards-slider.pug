@@ -1,9 +1,9 @@
-mixin cards-slider(addClass)
+mixin cards-slider(title, addClass)
   // cards-slider
   .cards-slider.section(class= addClass)
     .container 
       .cards-slider__head 
-        h2.subtitle.subtitle--blue Новинки
+        h2.subtitle.subtitle--blue= title
         .cards-slider__controll 
           a(href="#").cards-slider__more Смотреть все
           .cards-slider__arrows 

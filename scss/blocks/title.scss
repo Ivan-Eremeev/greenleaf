@@ -6,6 +6,8 @@
   margin-bottom: 40px;
   @include media-breakpoint-down(md) {
     margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 /* /title */

@@ -36,5 +36,17 @@
       object-fit: cover;
     }
   }
+  @include media-breakpoint-down(md) {
+    &__content {
+      min-height: 0;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__btn {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
 }
 /* /offer */

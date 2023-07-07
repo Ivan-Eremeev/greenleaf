@@ -9,6 +9,7 @@
     color: #fff;
     position: relative;
     background-image: url(../img/news-tiles-bg.jpg);
+    background-size: cover;
     overflow: hidden;
     @include media-breakpoint-up(md) {
       &:hover {
@@ -77,6 +78,23 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
+  }
+  @include media-breakpoint-down(xxl) {
+    &__block {
+      min-height: 350px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__block {
+      min-height: 280px;
+      padding: 40px 20px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 }
 /* /news-tiles */

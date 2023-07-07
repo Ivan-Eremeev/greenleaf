@@ -7,7 +7,7 @@ block content
 
   .page 
 
-    include core/header.pug
+    //- include core/header.pug
 
     .content 
 
@@ -49,7 +49,7 @@ block content
       // /catalog
 
       include blocks/cards-slider.pug
-      +cards-slider
+      +cards-slider('Новинки')
 
       // banner
       .banner.section
@@ -62,7 +62,7 @@ block content
               a(href="#").banner__link Узнайте подробнее
       // /banner
 
-      +cards-slider('section--mb120')
+      +cards-slider('Хиты месяца', 'section--mb120')
 
       // scrool-up
       .scrool-up.js-scrollup
