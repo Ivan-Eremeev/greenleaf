@@ -1,82 +1,92 @@
 // header
 header#headerSticky.header
 
-  .header__top 
+  .header__mobile 
     .container 
-
-      .header__info 
-        ul
-          li 
-            a(href="#") Москва
-          li 
-            a(href="#") Доставка и оплата
-
-      .header__social 
-        ul 
-          li 
-            a(href="#") 
-              svg(class="icon-vk")
-                use(xlink:href="img/sprite.svg#vk")
-          li 
-            a(href="#") 
-              svg(class="icon-telegram")
-                use(xlink:href="img/sprite.svg#telegram")
-
-      .header__login 
-        ul 
-          li 
-            a(href="#") Вход
-          li 
-            a(href="#") Регистрация
-
-  .header__middle 
-    .container 
-      a(href="#").header__logo
+      a(href="#").header__logo-mobile
         img(src="img/logo.svg", alt="")
-        
-      .header__menu 
-        ul 
-          li 
-            a(href="#").active Главная
-          li 
-            a(href="#") О компании
-          li 
-            a(href="#") Продукция
-          li 
-            a(href="#") Как начать свой бизнес
-          li 
-            a(href="#") Контакты
+      .hamburger.hamburger--squeeze.js-drop-menu(data-drop="menuMobile")
+        .hamburger-box
+          .hamburger-inner 
+  .header__container#menuMobile 
+    .header__top 
+      .container 
 
-      .header__tel 
-        a(href="tel:88002001122") 8-800-200-1122
-        span Звонок бесплатный
+        .header__info 
+          ul
+            li 
+              a(href="#") Москва
+            li 
+              a(href="#") Доставка и оплата
 
-  .header__bottom 
-    .container 
+        .header__social 
+          ul 
+            li 
+              a(href="#") 
+                svg(class="icon-vk")
+                  use(xlink:href="img/sprite.svg#vk")
+            li 
+              a(href="#") 
+                svg(class="icon-telegram")
+                  use(xlink:href="img/sprite.svg#telegram")
 
-      .header__catalog-btn
-        button.btn.btn--blue 
-          | Каталог
-          svg(class="icon-grid")
-            use(xlink:href="img/sprite.svg#grid")
-            
-      form(action="#").header__search 
-        input(type="text" placeholder="Найти...")
-        button(type="submit")
-          svg(class="icon-search")
-            use(xlink:href="img/sprite.svg#search")
+        .header__login 
+          ul 
+            li 
+              a(href="#") Вход
+            li 
+              a(href="#") Регистрация
 
-      .header__controll 
-        .header__controll-item 
-          | Избранное
-          .header__controll-icon 
-            span 9
-            svg(class="icon-heart")
-              use(xlink:href="img/sprite.svg#heart")
-        .header__controll-item 
-          | Корзина
-          .header__controll-icon 
-            svg(class="icon-cart")
-              use(xlink:href="img/sprite.svg#cart")
-            span 1
+    .header__middle 
+      .container 
+        a(href="#").header__logo
+          img(src="img/logo.svg", alt="")
+
+        .header__close.js-drop-close(data-drop="menuMobile")
+          
+        .header__menu 
+          ul 
+            li 
+              a(href="#").active Главная
+            li 
+              a(href="#") О компании
+            li 
+              a(href="#") Продукция
+            li 
+              a(href="#") Как начать свой бизнес
+            li 
+              a(href="#") Контакты
+
+        .header__tel 
+          a(href="tel:88002001122") 8-800-200-1122
+          span Звонок бесплатный
+
+    .header__bottom 
+      .container 
+
+        .header__catalog-btn
+          button.btn.btn--blue 
+            | Каталог
+            svg(class="icon-grid")
+              use(xlink:href="img/sprite.svg#grid")
+              
+        form(action="#").header__search 
+          input(type="text" placeholder="Найти...")
+          button(type="submit")
+            svg(class="icon-search")
+              use(xlink:href="img/sprite.svg#search")
+
+        .header__controll 
+          .header__controll-item 
+            | Избранное
+            .header__controll-icon 
+              span 9
+              svg(class="icon-heart")
+                use(xlink:href="img/sprite.svg#heart")
+          .header__controll-item 
+            | Корзина
+            .header__controll-icon 
+              svg(class="icon-cart")
+                use(xlink:href="img/sprite.svg#cart")
+              span 1
 //	/header

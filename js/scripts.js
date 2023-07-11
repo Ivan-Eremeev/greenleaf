@@ -1,21 +1,21 @@
 window.onload = function () {
 
   // Липкое меню.
-  // function stikyMenu(header) {
-  //   let headerTop = header.offset().top;
-  //   headerToggleClass();
-  //   $(window).scroll(function () {
-  //     headerToggleClass();
-  //   });
-  //   function headerToggleClass() {
-  //     if ($(window).scrollTop() > headerTop + 300) {
-  //       header.addClass('sticky');
-  //     } else if ($(window).scrollTop() <= headerTop) {
-  //       header.removeClass('sticky');
-  //     }
-  //   }
-  // };
-  // stikyMenu($('#headerSticky'));
+  function stikyMenu(header) {
+    let headerTop = header.offset().top;
+    headerToggleClass();
+    $(window).scroll(function () {
+      headerToggleClass();
+    });
+    function headerToggleClass() {
+      if ($(window).scrollTop() > headerTop + 300) {
+        header.addClass('sticky');
+      } else if ($(window).scrollTop() <= headerTop) {
+        header.removeClass('sticky');
+      }
+    }
+  };
+  stikyMenu($('#headerSticky'));
 
   // Выпадайки при клике по кнопке
   // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
