@@ -1,0 +1,42 @@
+/* breadcrumbs */
+.breadcrumbs { 
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 18px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      &:not(:last-child) {
+        position: relative;
+        margin-right: 10px;
+        padding-right: 16px;
+        &:after {
+          content: '';
+          display: block;
+          width: 6px;
+          height: 6px;
+          background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.360107 5.11202L2.02811 2.79602L0.360107 0.468018H1.71611L3.42011 2.79602L1.71611 5.11202H0.360107ZM2.85611 5.11202L4.52411 2.79602L2.85611 0.468018H4.21211L5.91611 2.79602L4.21211 5.11202H2.85611Z' fill='%238A9097'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 7px;
+          right: 0;
+        }
+      }
+      a {
+        color: $gray_color;
+        @include media-breakpoint-up(md) {
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+      span {
+        color: $text_color_light;
+      }
+    }
+  }
+}
+/* /breadcrumbs */

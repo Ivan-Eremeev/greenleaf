@@ -1,0 +1,28 @@
+/* category */
+.category { 
+  .title {
+    
+  }
+  &__sorter {
+    display: flex;
+    margin-bottom: 80px;
+    .select {
+      margin-right: 24px;
+      &.category__sorter-end {
+        margin-right: 0;
+        margin-left: auto;
+        .select__drop {
+          left: auto;
+          right: 0;
+          border-radius: 4px 0 4px 4px;
+        }
+      }
+    }
+  }
+  &__cards {
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid $border_color;
+  }
+}
+/* /category */

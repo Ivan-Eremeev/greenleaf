@@ -355,7 +355,7 @@
   @include media-breakpoint-down(md) {
     &__mobile {
       display: block;
-      background-color: #fff;
+      background: linear-gradient(135deg, #EEF2F3 0%, #4AB034 100%);
       box-shadow: 0 0 20px rgba(0, 0, 0, .3);
       position: fixed;
       top: 0;

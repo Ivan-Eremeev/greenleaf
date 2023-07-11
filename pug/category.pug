@@ -1,0 +1,252 @@
+extends core/base.pug
+
+block title 
+  title Категория
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              a(href="#") Интернет-магазин
+            li 
+              span Балловые продукты
+      // /breadcrumbs
+
+      // category
+      .category
+        .container 
+
+          h1.title.title--green Балловые продукты
+
+          .category__sorter 
+
+            // select
+            .select
+              .select__trigger Категория товара
+              .select__drop 
+                ul 
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Гигиена полости рта
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Детские товары
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Личная гигиена
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Продукты для здоровья 
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Средства для волос
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Уходовая косметика
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Декоративная косметика
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Парфюм
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Салфетки и бумага
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Товары для дома
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Другое
+            // /select
+
+            // select
+            .select
+              .select__trigger Бренд
+              .select__drop 
+                ul 
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | BERCLEAN
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | LIMANCY
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | MIAOROU
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | OKFAD
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | SAVOL
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | TA
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | KARDLI
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | MEOWEQLO
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | MOREFUTURE
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | PREDAWN
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | SUTING
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | YIJIAN
+            // /select
+
+            // select
+            .select.category__sorter-end
+              .select__trigger Фильтровать по
+              .select__drop 
+                ul 
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Популярные
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Новинки
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Сначала дешевые
+                  li 
+                    label 
+                      input(type="checkbox")
+                      span 
+                        span.select__rectangle 
+                        | Сначала дорогие 
+            // /select
+
+          .category__cards 
+            .row.gy-3 
+              .col-lg-4 
+                include blocks/card-product.pug
+                +card-product
+              .col-lg-4 
+                +card-product
+              .col-lg-4 
+                +card-product
+              .col-lg-4 
+                +card-product
+              .col-lg-4 
+                +card-product
+              .col-lg-4 
+                +card-product
+              .col-lg-4 
+                +card-product
+              .col-lg-4 
+                +card-product
+              .col-lg-4 
+                +card-product
+      // /category
+
+      // pagination
+      .pagination
+        .container 
+          ul 
+            li 
+              span 01
+            li 
+              a(href="#") 02
+            li 
+              a(href="#") 03
+      // /pagination
+
+    include core/footer.pug

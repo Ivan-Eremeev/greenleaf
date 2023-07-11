@@ -470,4 +470,32 @@ window.onload = function () {
   // };
   // countNumber($(".count-number"));
 
+  // Селекты
+  function selectToggle() {
+    $('.select__trigger').each(function () {
+      let trigger = $(this);
+      trigger.on('click', function () {
+        let triggerCurrent = $(this);
+        let dropCurrent = triggerCurrent.siblings('.select__drop');
+        if (!triggerCurrent.hasClass('active')) {
+          triggerCurrent.addClass('active');
+          dropCurrent.addClass('open');
+        } else {
+          triggerCurrent.removeClass('active');
+          dropCurrent.removeClass('open');
+        }
+        $(document).mouseup(function (e) {
+          if (!triggerCurrent.is(e.target)
+            && triggerCurrent.has(e.target).length === 0
+            && !dropCurrent.is(e.target)
+            && dropCurrent.has(e.target).length === 0) {
+            triggerCurrent.removeClass('active');
+            dropCurrent.removeClass('open');
+          }
+        });
+      })
+    })
+  }
+  selectToggle();
+
 }
