@@ -38,5 +38,11 @@
       }
     }
   }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 40px;
+    ul {
+      justify-content: center;
+    }
+  }
 }
 /* /pagination */

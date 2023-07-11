@@ -1,6 +1,8 @@
 /* card-product */
 .card-product { 
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 18px 24px 24px;
   text-align: center;
   border-radius: 8px;
@@ -101,14 +103,17 @@
     }
   }
   &__btn {
+    margin-top: auto;
     .btn {
       width: 100%;
+      padding: 16px 10px;
     }
     &.hide {
       display: none;
     }
   } 
   &__hideblock {
+    margin-top: auto;
     display: none;
     &.show {
       display: flex;
@@ -162,6 +167,18 @@
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 24px;
+    }
+    &__hideblock {
+      flex-wrap: wrap;
+    }
+    &__hideblock-btn {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+    &__counter {
+      width: 100%;
+      height: 58px;
     }
   }
 }

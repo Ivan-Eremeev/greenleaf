@@ -11,7 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
+    flex-shrink: 0;
+    width: 32%;
     height: 100%;
     background-color: $primary_color;
     border-radius: 4px;
@@ -32,7 +33,7 @@
     }
   }
   &__input {
-    width: 78px;
+    flex-grow: 1;
     height: 100%;
     position: relative;
     input {

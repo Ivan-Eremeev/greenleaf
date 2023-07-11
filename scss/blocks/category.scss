@@ -24,5 +24,33 @@
     margin-bottom: 80px;
     border-bottom: 1px solid $border_color;
   }
+  @include media-breakpoint-down(md) {
+    &__sorter {
+      margin-bottom: 40px;
+    }
+    &__cards {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__sorter {
+      flex-wrap: wrap;
+      .select {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 8px;
+      }
+      .select__trigger {
+        display: flex;
+        justify-content: space-between;
+      }
+      .select__drop {
+        width: 100%;
+        border-radius: 0 0 4px 4px !important;
+      }
+    }
+  }
 }
 /* /category */
