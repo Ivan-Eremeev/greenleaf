@@ -61,6 +61,15 @@
       }
     }
   }
+  &--green {
+    background-color: $primary_color;
+    color: #fff;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: $primary_color_hover;
+      }
+    }
+  }
   @include media-breakpoint-down(md) {
     padding: 12px 28px;
   }

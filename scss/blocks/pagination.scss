@@ -21,6 +21,7 @@
         @include media-breakpoint-up(md) {
           &:hover {
             background-color: $primary_color;
+            border-color: $primary_color;
             color: #fff;
           }
         }

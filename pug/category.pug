@@ -222,7 +222,7 @@ block content
               .col-lg-4 
                 +card-product
               .col-lg-4 
-                +card-product
+                +card-product('card-product--disabled')
               .col-lg-4 
                 +card-product
               .col-lg-4 
@@ -248,5 +248,7 @@ block content
             li 
               a(href="#") 03
       // /pagination
+
+      include blocks/scrool-up.pug
 
     include core/footer.pug

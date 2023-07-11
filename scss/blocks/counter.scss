@@ -3,8 +3,9 @@
   display: flex;
   width: 120px;
   height: 40px;
+  padding: 8px;
   background: #FFFFFF;
-  border: 1px solid #E1E4EF;
+  border: 1px solid $border_color;
   border-radius: 6px;
   &__btn {
     display: flex;
@@ -12,18 +13,22 @@
     align-items: center;
     width: 90px;
     height: 100%;
+    background-color: $primary_color;
+    border-radius: 4px;
     cursor: pointer;
     user-select: none;
     font-size: 30px;
-    color: #ccc;
-    fill:#ccc;
+    color: #fff;
+    fill:#fff;
     transition: 0.1s;
     svg {
       width: 20px;
       height: 20px;
     }
-    &:hover {
-      fill: blue
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: $primary_color_hover;
+      }
     }
   }
   &__input {
@@ -33,7 +38,10 @@
     input {
       width: 100%;
       height: 100%;
-      font-size: 14px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+      color: $secondary_color;
       text-align: center;
       border: none;
       outline: none;

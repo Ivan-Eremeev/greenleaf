@@ -369,37 +369,37 @@ window.onload = function () {
   // }
   // clearFilter();
 
-  // // Изменение количества товара (плюс минус)
-  // function counter(block) {
-  //   const counter = document.querySelectorAll(block);
-  //   if (counter) {
-  //     counter.forEach(element => {
-  //       const minus = element.querySelector('.js-counter-minus');
-  //       const plus = element.querySelector('.js-counter-plus');
-  //       const inputWrap = element.querySelector('.js-counter-input');
-  //       const input = inputWrap.querySelector('input');
-  //       plus.addEventListener('click', () => {
-  //         if (Number(input.value) < 999) {
-  //           input.value = Number(input.value) + 1;
-  //         }
-  //       })
-  //       minus.addEventListener('click', () => {
-  //         if (Number(input.value) > 1) {
-  //           input.value = Number(input.value) - 1;
-  //         }
-  //       })
-  //       input.addEventListener('keyup', () => {
-  //         input.value = input.value.replace(/[^\d]/g, '');
-  //       })
-  //       input.addEventListener('blur', () => {
-  //         if (input.value == '' || input.value == 0) {
-  //           input.value = 1;
-  //         }
-  //       })
-  //     });
-  //   }
-  // }
-  // counter('.js-counter');
+  // Изменение количества товара (плюс минус)
+  function counter(block) {
+    let counter = document.querySelectorAll(block);
+    if (counter) {
+      counter.forEach(element => {
+        let minus = element.querySelector('.js-counter-minus');
+        let plus = element.querySelector('.js-counter-plus');
+        let inputWrap = element.querySelector('.js-counter-input');
+        let input = inputWrap.querySelector('input');
+        plus.addEventListener('click', () => {
+          if (Number(input.value) < 999) {
+            input.value = Number(input.value) + 1;
+          }
+        })
+        minus.addEventListener('click', () => {
+          if (Number(input.value) > 0) {
+            input.value = Number(input.value) - 1;
+          }
+        })
+        input.addEventListener('keyup', () => {
+          input.value = input.value.replace(/[^\d]/g, '');
+        })
+        input.addEventListener('blur', () => {
+          if (input.value == '' || input.value == 0) {
+            input.value = 1;
+          }
+        })
+      });
+    }
+  }
+  counter('.js-counter');
 
   // // noUiSlider || Ползунок выбора
   // if (document.getElementById('noUiSlider')) {
@@ -497,5 +497,29 @@ window.onload = function () {
     })
   }
   selectToggle();
+
+  // Появление счетчика в карточке товара
+  function showCounterProductCatd() {
+    $('.js-card-product__btn--instock').each(function () {
+      let btn = $(this);
+      btn.on('click', function () {
+        let btnCurrent = $(this);
+        let hideBlock = btnCurrent.siblings('.card-product__hideblock');
+        let counter = hideBlock.find('.js-counter');
+        let minus = counter.find('.js-counter-minus');
+        let input = counter.find('.js-counter-input input');
+        btnCurrent.addClass('hide');
+        hideBlock.addClass('show');
+        input.val(1);
+        minus.on('click', () => {
+          if (Number(input.val()) < 1) {
+            btnCurrent.removeClass('hide');
+            hideBlock.removeClass('show');
+          }
+        })
+      })
+    })
+  }
+  showCounterProductCatd();
 
 }

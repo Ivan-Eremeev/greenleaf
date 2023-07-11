@@ -2,7 +2,6 @@
 .card-product { 
   display: block;
   padding: 18px 24px 24px;
-  color: $text_color_light;
   text-align: center;
   border-radius: 8px;
   background-color: #fff;
@@ -72,6 +71,7 @@
     }
   }
   &__img {
+    display: block;
     height: 224px;
     margin-bottom: 16px;
     img {
@@ -88,16 +88,63 @@
     margin-bottom: 16px;
   }
   &__title {
+    display: block;
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
     margin-bottom: 48px;
+    color: $text_color_light;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        color: $primary_color;
+      }
+    }
   }
   &__btn {
     .btn {
       width: 100%;
     }
+    &.hide {
+      display: none;
+    }
   } 
+  &__hideblock {
+    display: none;
+    &.show {
+      display: flex;
+    }
+  }
+  &__hideblock-btn {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+    margin-right: 20px;
+    .btn {
+      width: 100%;
+      padding: 16px 10px;
+    }
+  }
+  &__counter {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+    .counter {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &--disabled {
+    .card-product__btn {
+      .btn {
+        background-color: $border_color;
+        pointer-events: none;
+      }
+    }
+    .card-product__title {
+      pointer-events: none;
+      &:hover {
+        color: $text_color_light;
+      }
+    }
+  }
   @include media-breakpoint-down(lg) {
     box-shadow: 0px 5px 10px rgba(0, 30, 69, 0.10);
   }

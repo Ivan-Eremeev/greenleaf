@@ -1,5 +1,5 @@
-mixin card-product()
-  a(href="#").card-product 
+mixin card-product(addClass)
+  .card-product(class= addClass)
 
     .card-product__top 
 
@@ -12,12 +12,32 @@ mixin card-product()
           input(type="checkbox", name="favorite")
           span 
 
-    .card-product__img 
+    a(href="#").card-product__img 
       img(src="img/products/img-1.jpg", alt="")
 
     .card-product__price 1 200 ₽
 
-    .card-product__title Пробиотики из сухого верблюжьего молока TUODADA
+    a(href="#").card-product__title Пробиотики из сухого верблюжьего молока TUODADA
 
-    .card-product__btn 
-      button.btn.btn--blue Купить
+    if addClass
+      .card-product__btn 
+        button.btn.btn--blue Ожидается поступление
+    else 
+      .card-product__btn.js-card-product__btn--instock
+        button.btn.btn--blue Купить
+
+    .card-product__hideblock 
+    
+      .card-product__hideblock-btn 
+        button.btn.btn--green В корзину
+
+      .card-product__counter
+        .counter.js-counter
+          .counter__btn.js-counter-minus 
+            svg(class="icon-minus")
+              use(xlink:href="img/sprite.svg#minus")
+          .counter__input.js-counter-input
+            input(type="text" value="1" maxlength="3")
+          .counter__btn.js-counter-plus 
+            svg(class="icon-plus")
+              use(xlink:href="img/sprite.svg#plus")

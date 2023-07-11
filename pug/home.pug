@@ -182,14 +182,6 @@ block content
                 .news-tiles__date 01 апреля 2023
       // /news-tiles
 
-      // scrool-up
-      .scrool-up.js-scrollup
-        .scrool-up__arrow 
-          svg(class="icon-arrow-middle")
-            use(xlink:href="img/sprite.svg#arrow-middle")
-        .scrool-up__dog 
-          svg(class="icon-dog")
-            use(xlink:href="img/sprite.svg#dog")
-      // /scrool-up
+      include blocks/scrool-up.pug
 
     include core/footer.pug
