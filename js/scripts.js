@@ -177,7 +177,7 @@ window.onload = function () {
     const swiperProductThumb = new Swiper('#swiperProductThumb', {
       slidesPerView: 3,
       spaceBetween: 8,
-      threshold: 3,
+      watchSlidesProgress: true,
     });
     const sliderProduct = new Swiper('#sliderProduct', {
       slidesPerView: 1,

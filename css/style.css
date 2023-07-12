@@ -8684,7 +8684,7 @@ body.lock {
   overflow: hidden;
 }
 .product__slider #swiperProductThumb {
-  width: 180px;
+  width: 190px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -8717,7 +8717,6 @@ body.lock {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 60px;
   height: 70px;
   padding-bottom: 10px;
   border-bottom: 2px solid transparent;
