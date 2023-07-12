@@ -57,7 +57,7 @@ block content
       // /welcome
 
       // benefit
-      section.benefit.section
+      .benefit.section
         .row.g-0
           .col-sm-6 
             .benefit__block
@@ -106,7 +106,7 @@ block content
       // /benefit
 
       // brands
-      section.brands.section
+      .brands.section
         .container 
           h2.subtitle Наши бренды:
         .brands__slider 
@@ -145,21 +145,12 @@ block content
       include blocks/cards-slider.pug
       +cards-slider('Новинки')
 
-      // banner
-      .banner.section
-        .container 
-          .banner__block 
-            .banner__img 
-              img(src="img/leaves.png", alt="")
-            .banner__content 
-              .subtitle.subtitle--white Получите больше преимуществ работая с нами
-              a(href="#").banner__link Узнайте подробнее
-      // /banner
+      include blocks/banner.pug
 
       +cards-slider('Лидеры продаж:')
 
       // news-tiles
-      section.news-tiles
+      .news-tiles
         .row.g-0 
           .col-md-4 
             a(href="#").news-tiles__block 

@@ -1,0 +1,124 @@
+/* product */
+.product { 
+  margin-bottom: 80px;
+  .title {
+    max-width: 850px;
+  }
+  &__slider {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid $border_color;
+    background-color: #fff;
+    box-shadow: 0px 20px 40px 0px rgba(0, 30, 69, 0.12);
+    #sliderProduct {
+      text-align: center;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    #swiperProductThumb {
+      width: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      .swiper-slide-thumb-active {
+        .product__thumb {
+          border-color: $primary_color;
+        }
+      }
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 476px;
+    img {
+      max-height: 100%;
+    }
+  }
+  &__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    user-select: none;
+    img {
+      max-height: 100%;
+    }
+  }
+  &__info {
+    padding: 32px;
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    margin-bottom: 32px;
+  }
+  &__info-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  &__price {
+    margin-right: 40px;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: $primary_color;
+    white-space: nowrap;
+  }
+  &__btn {
+    
+  }
+  &__volume {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $text_color_light;
+    p {
+      margin-bottom: 16px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__info {
+      padding: 20px;
+    }
+    &__price {
+      margin-right: 10px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 40px;
+    &__price {
+      font-size: 30px;
+    }
+    &__info {
+      margin-bottom: 24px;
+    }
+    &__info-head {
+      margin-bottom: 16px;
+    }
+    &__text {
+      p {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__img {
+      height: 320px;
+    }
+  }
+}
+/* /product */

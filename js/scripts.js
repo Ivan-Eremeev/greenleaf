@@ -172,6 +172,22 @@ window.onload = function () {
     })
   }
 
+  // Swiper | Слайдер
+  if ($('#sliderProduct').length) {
+    const swiperProductThumb = new Swiper('#swiperProductThumb', {
+      slidesPerView: 3,
+      spaceBetween: 8,
+      threshold: 3,
+    });
+    const sliderProduct = new Swiper('#sliderProduct', {
+      slidesPerView: 1,
+      threshold: 3,
+      thumbs: {
+        swiper: swiperProductThumb,
+      },
+    });
+  }
+
   // // Swiper | Слайдер (множество одинаковых слайдеров)
   // if ($('.js-slider-wrapper').length) {
   //   const Swipers = Array.from(document.querySelectorAll('.js-slider-wrapper'), n => {
