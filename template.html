@@ -71,8 +71,7 @@
 					<div class="header__bottom"> 
 						<div class="container"> 
 							<div class="header__catalog-btn">
-								<button class="btn btn--blue">
-									 Каталог
+								<button class="btn btn--blue js-drop-menu" data-drop="menuCatalog">Каталог
 									<svg class="icon-grid">
 										<use xlink:href="img/sprite.svg#grid"></use>
 									</svg>
@@ -106,6 +105,155 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="header__catalog"> 
+					<!-- catalog-menu-->
+					<div class="js-tabs catalog-menu" id="menuCatalog">
+						<div class="container"> 
+							<div class="catalog-menu__head"> 
+								<div class="subtitle subtitle--blue"> Каталог</div>
+								<div class="catalog-menu__close js-drop-close" data-drop="menuCatalog">Закрыть<span> </span></div>
+								<div class="catalog-menu__controll"> 
+									<ul class="catalog-menu__triggers"> 
+										<li> <a class="catalog-menu__trigger js-tabs-trigger active" href="#tab_1">Балловые товары</a></li>
+										<li> <a class="catalog-menu__trigger js-tabs-trigger" href="#tab_2">Купонные товары</a></li>
+										<li> <a class="catalog-menu__trigger js-tabs-trigger" href="#tab_3">Стартовые наборы</a></li>
+									</ul>
+									<form class="catalog-menu__search" action="#"> 
+										<input type="text" placeholder="Найти...">
+										<button type="submit">
+											<svg class="icon-search">
+												<use xlink:href="img/sprite.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+							<div class="catalog-menu__contents"> 
+								<div class="catalog-menu__content js-tabs-content open" data-href="#tab_1">
+									<div class="row row-cols-xl-5 row-cols-lg-4 row-cols-3">
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Гигиена полости рта</span>
+												<svg class="icon-bubble">
+													<use xlink:href="img/sprite.svg#bubble"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Детские товары</span>
+												<svg class="icon-ship">
+													<use xlink:href="img/sprite.svg#ship"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Личная гигиена</span>
+												<svg class="icon-face">
+													<use xlink:href="img/sprite.svg#face"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Продукты для здоровья </span>
+												<svg class="icon-carrot">
+													<use xlink:href="img/sprite.svg#carrot"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Средства для волос</span>
+												<svg class="icon-hair">
+													<use xlink:href="img/sprite.svg#hair"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Уходовая косметика</span>
+												<svg class="icon-cup">
+													<use xlink:href="img/sprite.svg#cup"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Декоративная косметика</span>
+												<svg class="icon-makeup">
+													<use xlink:href="img/sprite.svg#makeup"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Другое</span>
+												<svg class="icon-diamond">
+													<use xlink:href="img/sprite.svg#diamond"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Парфюм</span>
+												<svg class="icon-bottle">
+													<use xlink:href="img/sprite.svg#bottle"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Салфетки и бумага</span>
+												<svg class="icon-layers">
+													<use xlink:href="img/sprite.svg#layers"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Товары для дома</span>
+												<svg class="icon-lamp">
+													<use xlink:href="img/sprite.svg#lamp"></use>
+												</svg></a></div>
+									</div>
+								</div>
+								<div class="catalog-menu__content js-tabs-content" data-href="#tab_2">
+									<div class="row row-cols-xl-5 row-cols-lg-4 row-cols-3">
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Гигиена полости рта</span>
+												<svg class="icon-bubble">
+													<use xlink:href="img/sprite.svg#bubble"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Детские товары</span>
+												<svg class="icon-ship">
+													<use xlink:href="img/sprite.svg#ship"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Личная гигиена</span>
+												<svg class="icon-face">
+													<use xlink:href="img/sprite.svg#face"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Продукты для здоровья </span>
+												<svg class="icon-carrot">
+													<use xlink:href="img/sprite.svg#carrot"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Средства для волос</span>
+												<svg class="icon-hair">
+													<use xlink:href="img/sprite.svg#hair"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Уходовая косметика</span>
+												<svg class="icon-cup">
+													<use xlink:href="img/sprite.svg#cup"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Декоративная косметика</span>
+												<svg class="icon-makeup">
+													<use xlink:href="img/sprite.svg#makeup"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Другое</span>
+												<svg class="icon-diamond">
+													<use xlink:href="img/sprite.svg#diamond"></use>
+												</svg></a></div>
+									</div>
+								</div>
+								<div class="catalog-menu__content js-tabs-content" data-href="#tab_3">
+									<div class="row row-cols-xl-5 row-cols-lg-4 row-cols-3">
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Продукты для здоровья </span>
+												<svg class="icon-carrot">
+													<use xlink:href="img/sprite.svg#carrot"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Средства для волос</span>
+												<svg class="icon-hair">
+													<use xlink:href="img/sprite.svg#hair"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Уходовая косметика</span>
+												<svg class="icon-cup">
+													<use xlink:href="img/sprite.svg#cup"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Декоративная косметика</span>
+												<svg class="icon-makeup">
+													<use xlink:href="img/sprite.svg#makeup"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Другое</span>
+												<svg class="icon-diamond">
+													<use xlink:href="img/sprite.svg#diamond"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Парфюм</span>
+												<svg class="icon-bottle">
+													<use xlink:href="img/sprite.svg#bottle"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Салфетки и бумага</span>
+												<svg class="icon-layers">
+													<use xlink:href="img/sprite.svg#layers"></use>
+												</svg></a></div>
+										<div class="col"> <a class="catalog-menu__card" href="#"> <span>Товары для дома</span>
+												<svg class="icon-lamp">
+													<use xlink:href="img/sprite.svg#lamp"></use>
+												</svg></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /catalog-menu-->
 				</div>
 			</header>
 			<!--	/header-->

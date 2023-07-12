@@ -65,7 +65,7 @@ header#headerSticky.header
       .container 
 
         .header__catalog-btn
-          button.btn.btn--blue 
+          button.btn.btn--blue.js-drop-menu(data-drop="menuCatalog")
             | Каталог
             svg(class="icon-grid")
               use(xlink:href="img/sprite.svg#grid")
@@ -89,4 +89,170 @@ header#headerSticky.header
               svg(class="icon-cart")
                 use(xlink:href="img/sprite.svg#cart")
               span 1
+
+  .header__catalog 
+    // catalog-menu
+    .js-tabs.catalog-menu#menuCatalog
+      .container 
+        .catalog-menu__head 
+          .subtitle.subtitle--blue  Каталог
+          .catalog-menu__close.js-drop-close(data-drop="menuCatalog") Закрыть
+            span 
+          .catalog-menu__controll 
+            ul.catalog-menu__triggers 
+              li 
+                a(href="#tab_1").catalog-menu__trigger.js-tabs-trigger.active Балловые товары
+              li 
+                a(href="#tab_2").catalog-menu__trigger.js-tabs-trigger Купонные товары
+              li 
+                a(href="#tab_3").catalog-menu__trigger.js-tabs-trigger Стартовые наборы
+            form(action="#").catalog-menu__search 
+              input(type="text" placeholder="Найти...")
+              button(type="submit")
+                svg(class="icon-search")
+                  use(xlink:href="img/sprite.svg#search")
+        .catalog-menu__contents 
+          .catalog-menu__content.js-tabs-content.open(data-href="#tab_1")
+            .row.row-cols-xl-5.row-cols-lg-4.row-cols-3
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Гигиена полости рта
+                  svg(class="icon-bubble")
+                    use(xlink:href="img/sprite.svg#bubble")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Детские товары
+                  svg(class="icon-ship")
+                    use(xlink:href="img/sprite.svg#ship")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Личная гигиена
+                  svg(class="icon-face")
+                    use(xlink:href="img/sprite.svg#face")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Продукты для здоровья 
+                  svg(class="icon-carrot")
+                    use(xlink:href="img/sprite.svg#carrot")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Средства для волос
+                  svg(class="icon-hair")
+                    use(xlink:href="img/sprite.svg#hair")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Уходовая косметика
+                  svg(class="icon-cup")
+                    use(xlink:href="img/sprite.svg#cup")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Декоративная косметика
+                  svg(class="icon-makeup")
+                    use(xlink:href="img/sprite.svg#makeup")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Другое
+                  svg(class="icon-diamond")
+                    use(xlink:href="img/sprite.svg#diamond")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Парфюм
+                  svg(class="icon-bottle")
+                    use(xlink:href="img/sprite.svg#bottle")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Салфетки и бумага
+                  svg(class="icon-layers")
+                    use(xlink:href="img/sprite.svg#layers")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Товары для дома
+                  svg(class="icon-lamp")
+                    use(xlink:href="img/sprite.svg#lamp")
+          .catalog-menu__content.js-tabs-content(data-href="#tab_2")
+            .row.row-cols-xl-5.row-cols-lg-4.row-cols-3
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Гигиена полости рта
+                  svg(class="icon-bubble")
+                    use(xlink:href="img/sprite.svg#bubble")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Детские товары
+                  svg(class="icon-ship")
+                    use(xlink:href="img/sprite.svg#ship")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Личная гигиена
+                  svg(class="icon-face")
+                    use(xlink:href="img/sprite.svg#face")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Продукты для здоровья 
+                  svg(class="icon-carrot")
+                    use(xlink:href="img/sprite.svg#carrot")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Средства для волос
+                  svg(class="icon-hair")
+                    use(xlink:href="img/sprite.svg#hair")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Уходовая косметика
+                  svg(class="icon-cup")
+                    use(xlink:href="img/sprite.svg#cup")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Декоративная косметика
+                  svg(class="icon-makeup")
+                    use(xlink:href="img/sprite.svg#makeup")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Другое
+                  svg(class="icon-diamond")
+                    use(xlink:href="img/sprite.svg#diamond")
+          .catalog-menu__content.js-tabs-content(data-href="#tab_3")
+            .row.row-cols-xl-5.row-cols-lg-4.row-cols-3
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Продукты для здоровья 
+                  svg(class="icon-carrot")
+                    use(xlink:href="img/sprite.svg#carrot")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Средства для волос
+                  svg(class="icon-hair")
+                    use(xlink:href="img/sprite.svg#hair")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Уходовая косметика
+                  svg(class="icon-cup")
+                    use(xlink:href="img/sprite.svg#cup")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Декоративная косметика
+                  svg(class="icon-makeup")
+                    use(xlink:href="img/sprite.svg#makeup")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Другое
+                  svg(class="icon-diamond")
+                    use(xlink:href="img/sprite.svg#diamond")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Парфюм
+                  svg(class="icon-bottle")
+                    use(xlink:href="img/sprite.svg#bottle")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Салфетки и бумага
+                  svg(class="icon-layers")
+                    use(xlink:href="img/sprite.svg#layers")
+              .col 
+                a(href="#").catalog-menu__card 
+                  span Товары для дома
+                  svg(class="icon-lamp")
+                    use(xlink:href="img/sprite.svg#lamp")
+    // /catalog-menu
+
 //	/header

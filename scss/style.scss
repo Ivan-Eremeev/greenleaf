@@ -74,7 +74,7 @@ $secondary_color_hover: #004E7A;
 @import 'blocks/select';
 // @import 'blocks/template';
 // @import 'blocks/popup';
-// @import 'blocks/tabs';
+@import 'blocks/tabs';
 // @import 'blocks/accordion';
 // @import 'blocks/js-scrollup';
 @import 'blocks/counter';
@@ -93,7 +93,7 @@ $secondary_color_hover: #004E7A;
 @import 'blocks/breadcrumbs';
 @import 'blocks/category';
 @import 'blocks/pagination';
-
+@import 'blocks/catalog-menu';
 
 @import 'blocks/footer';
 // @import 'blocks/menu';

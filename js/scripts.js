@@ -25,6 +25,7 @@ window.onload = function () {
         drop = undefined,
         close = $('.js-drop-close'),
         body = $('body');
+        header = $('header');
     btn.on('click', function () {
       let $this = $(this);
       let drop = $('#' + $this.data('drop'));
@@ -35,12 +36,14 @@ window.onload = function () {
         if (lock) {
           body.toggleClass('lock');
           body.css('padding-right', scrollWidth);
+          header.css('padding-right', scrollWidth);
         }
       } else {
         $this.removeClass('is-active');
         drop.removeClass('open');
         body.removeClass('lock');
         body.css('padding-right', 0);
+        header.css('padding-right', 0);
       }
       $(document).mouseup(function (e) {
         if (!$this.is(e.target)
@@ -51,6 +54,7 @@ window.onload = function () {
           drop.removeClass('open');
           body.removeClass('lock');
           body.css('padding-right', 0);
+          header.css('padding-right', 0);
         }
       });
     })
@@ -59,6 +63,7 @@ window.onload = function () {
       $('#' + $(this).data('drop')).removeClass('open');
       body.removeClass('lock');
       body.css('padding-right', 0);
+      header.css('padding-right', 0);
     })
   }
   dropBlock($('.js-drop-btn'));
@@ -230,33 +235,34 @@ window.onload = function () {
   //   mainClass: 'mfp-fade'
   // });
 
-  // // Табы
-	// function tabs() {
-  //   const tabs = $('.js-tabs');
-	// 	if (tabs.length) {
-	// 		tabs.each( function () {
-  //       let triggers = $(this).find('.js-tabs-trigger');
-  //       let contents = $(this).find('.js-tabs-content');
-  //       let time = 300;
-  //       triggers.on('click', function () {
-  //         let trigger = $(this);
-  //         let content = $('.js-tabs-content[data-href="' + trigger.attr('href') +'"]');
-  //         if (!trigger.hasClass('active')) {
-  //           triggers.removeClass('active');
-  //           trigger.addClass('active');
-  //           contents.hide();
-  //           contents.removeClass('open');
-  //           content.fadeIn(time, function () {
-  //             $(this).addClass('open');
-  //           });
-  //         }else {
-  //           return false;
-  //         }
-  //       })
-  //     });
-	// 	}
-	// }
-	// tabs();
+  // Табы
+	function tabs() {
+    const tabs = $('.js-tabs');
+		if (tabs.length) {
+			tabs.each( function () {
+        let triggers = $(this).find('.js-tabs-trigger');
+        let contents = $(this).find('.js-tabs-content');
+        let time = 300;
+        triggers.on('click', function (e) {
+          e.preventDefault();
+          let trigger = $(this);
+          let content = $('.js-tabs-content[data-href="' + trigger.attr('href') +'"]');
+          if (!trigger.hasClass('active')) {
+            triggers.removeClass('active');
+            trigger.addClass('active');
+            contents.hide();
+            contents.removeClass('open');
+            content.fadeIn(time, function () {
+              $(this).addClass('open');
+            });
+          }else {
+            return false;
+          }
+        })
+      });
+		}
+	}
+	tabs();
 
   // // Аккордеон
   // function accordion(accordion, settings) {
