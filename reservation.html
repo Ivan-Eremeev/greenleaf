@@ -7,7 +7,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
-		<title>Страница товара</title>
+		<title>Оформление заказа</title>
 		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/plugins/select2.min.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -265,243 +265,164 @@
 						<ul> 
 							<li> <a href="#">Главная</a></li>
 							<li> <a href="#">Интернет-магазин</a></li>
-							<li> <a href="#">Балловые продукты</a></li>
-							<li> <span>Пробиотики из сухого верблюжьего молока TUODADA</span></li>
+							<li> <span>Оформление заказа</span></li>
 						</ul>
 					</div>
 				</div>
 				<!-- /breadcrumbs-->
-				<!-- product-->
-				<div class="product">
+				<!-- reservation-->
+				<form class="reservation section" action="#">
 					<div class="container"> 
-						<h1 class="title title--green">Пробиотики из сухого верблюжьего молока TUODADA</h1>
-						<div class="row gy-3">
-							<div class="col-md-6"> 
-								<div class="product__slider"> 
-									<div id="sliderProduct"> 
-										<div class="swiper-wrapper"> 
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__img"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-										</div>
-									</div>
-									<div id="swiperProductThumb"> 
-										<div class="swiper-wrapper"> 
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
-											<div class="swiper-slide"> 
-												<div class="product__thumb"> <img src="img/products/img-1.jpg" alt=""></div>
-											</div>
+						<h1 class="title title--green">Оформление заказа</h1>
+						<div class="reservation__line"> </div>
+						<div class="reservation__item"> 
+							<div class="row gy-3">
+								<div class="col-md-6"> 
+									<div class="reservation__content"> 
+										<div class="reservation__num">001</div>
+										<div class="reservation__text"> 
+											<h2>ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h2>
+											<p> <b>Выберите населенный пункт, в котором вам наиболее удобно забрать ваш заказ.</b></p>
+											<p>Если в списке нет нужного адреса — обратитесь в тех. поддержку</p>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-6"> 
-								<div class="product__info"> 
-									<div class="product__info-head"> 
-										<div class="product__price">1 000 ₽</div>
-										<div class="product__btn"> 
-											<button class="btn btn--blue">В корзину</button>
+								<div class="col-md-6"> 
+									<div class="reservation__form"> 
+										<!-- select-2-->
+										<div class="select-2">
+											<select class="js-select2">
+												<option value="#">Доставка курьером</option>
+												<option value="#">Доставка почтой</option>
+												<option value="#">Самовывоз</option>
+											</select>
 										</div>
+										<!-- /select-2-->
+										<!-- select-2-->
+										<div class="select-2">
+											<select class="js-select2" data-placeholder="Выберите пункт выдачи">
+												<option value="">Здесь</option>
+												<option value="#">Тут</option>
+												<option value="#">Там</option>
+											</select>
+										</div>
+										<!-- /select-2-->
+										<!-- input-->
+										<div class="input input--index">
+											<input type="number" placeholder="Введите индекс">
+										</div>
+										<!-- /input-->
 									</div>
-									<div class="product__volume">Объем: 300 г</div>
-								</div>
-								<div class="product__text"> 
-									<p>Верблюжье молоко и ферментированные продукты на его основе обладают высокой пищевой ценностью. Оно содержит ряд важных микро и макроэлементов – кальций, цинк, кобальт, железо, калий, фосфор, а также витамины А, С и группы В.</p>
-									<p>Служит природным источником инсулина; улучшает состояние костной системы организма, укрепляет зубы; борется с проблемами кишечника.</p>
-									<p>Употребление верблюжьего молока на регулярной основе значительно повышает и укрепляет иммунный потенциал организма, делает организм устойчивым в отношении широкого спектра заболеваний.</p>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- /product-->
-				<!-- cross-sale-->
-				<div class="cross-sale section">
-					<div class="container"> 
-						<h2 class="cross-sale__title">Другие товары из категории: <span>Продукты для здоровья</span></h2>
-						<div class="cross-sale__cards"> 
-							<div class="row gy-3 justify-content-center"> 
-								<div class="col-lg-4 col-sm-6"> 
-																		<div class="card-product">
-																			<div class="card-product__top"> 
-																				<div class="card-product__stickers"> 
-																					<div class="card-product__sticker card-product__sticker--green">Новинка</div>
-																					<div class="card-product__sticker card-product__sticker--green-border">PV</div>
-																				</div>
-																				<div class="card-product__favorite"> 
-																					<label> 
-																						<input type="checkbox" name="favorite"><span> </span>
-																					</label>
-																				</div>
-																			</div><a class="card-product__img" href="#"> <img src="img/products/img-1.jpg" alt=""></a>
-																			<div class="card-product__price">1 200 ₽</div><a class="card-product__title" href="#">Пробиотики из сухого верблюжьего молока TUODADA</a>
-																			<div class="card-product__btn js-card-product__btn--instock">
-																				<button class="btn btn--blue">Купить</button>
-																			</div>
-																			<div class="card-product__hideblock"> 
-																				<div class="card-product__hideblock-btn"> 
-																					<button class="btn btn--green">В корзину</button>
-																				</div>
-																				<div class="card-product__counter">
-																					<div class="counter js-counter">
-																						<div class="counter__btn js-counter-minus"> 
-																							<svg class="icon-minus">
-																								<use xlink:href="img/sprite.svg#minus"></use>
-																							</svg>
-																						</div>
-																						<div class="counter__input js-counter-input">
-																							<input type="text" value="1" maxlength="3">
-																						</div>
-																						<div class="counter__btn js-counter-plus"> 
-																							<svg class="icon-plus">
-																								<use xlink:href="img/sprite.svg#plus"></use>
-																							</svg>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
+						<div class="reservation__line"> </div>
+						<div class="reservation__item"> 
+							<div class="row gy-3">
+								<div class="col-md-6"> 
+									<div class="reservation__content"> 
+										<div class="reservation__num">002</div>
+										<div class="reservation__text"> 
+											<h2>ИНФОРМАЦИЯ О ДОСТАВКЕ</h2>
+											<p> <b>Бесплатная доставка при сумме заказа от 3000 р. </b></p>
+											<p> 
+												<mark>Примерный срок доставки 03.06.2020 года</mark>
+											</p>
+											<p>Представленный расчет доставки является оптимальным с точки зрения соотношения цены/качества. В случае если вы хотите изменить срок доставки, воспользуйтесь формой выбора службы доставки и ее тарифом.</p>
+										</div>
+									</div>
 								</div>
-								<div class="col-lg-4 col-sm-6"> 
-																		<div class="card-product">
-																			<div class="card-product__top"> 
-																				<div class="card-product__stickers"> 
-																					<div class="card-product__sticker card-product__sticker--green">Новинка</div>
-																					<div class="card-product__sticker card-product__sticker--green-border">PV</div>
-																				</div>
-																				<div class="card-product__favorite"> 
-																					<label> 
-																						<input type="checkbox" name="favorite"><span> </span>
-																					</label>
-																				</div>
-																			</div><a class="card-product__img" href="#"> <img src="img/products/img-1.jpg" alt=""></a>
-																			<div class="card-product__price">1 200 ₽</div><a class="card-product__title" href="#">Пробиотики из сухого верблюжьего молока TUODADA</a>
-																			<div class="card-product__btn js-card-product__btn--instock">
-																				<button class="btn btn--blue">Купить</button>
-																			</div>
-																			<div class="card-product__hideblock"> 
-																				<div class="card-product__hideblock-btn"> 
-																					<button class="btn btn--green">В корзину</button>
-																				</div>
-																				<div class="card-product__counter">
-																					<div class="counter js-counter">
-																						<div class="counter__btn js-counter-minus"> 
-																							<svg class="icon-minus">
-																								<use xlink:href="img/sprite.svg#minus"></use>
-																							</svg>
-																						</div>
-																						<div class="counter__input js-counter-input">
-																							<input type="text" value="1" maxlength="3">
-																						</div>
-																						<div class="counter__btn js-counter-plus"> 
-																							<svg class="icon-plus">
-																								<use xlink:href="img/sprite.svg#plus"></use>
-																							</svg>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-								</div>
-								<div class="col-lg-4 col-sm-6 d-sm-none d-lg-block">
-																		<div class="card-product">
-																			<div class="card-product__top"> 
-																				<div class="card-product__stickers"> 
-																					<div class="card-product__sticker card-product__sticker--green">Новинка</div>
-																					<div class="card-product__sticker card-product__sticker--green-border">PV</div>
-																				</div>
-																				<div class="card-product__favorite"> 
-																					<label> 
-																						<input type="checkbox" name="favorite"><span> </span>
-																					</label>
-																				</div>
-																			</div><a class="card-product__img" href="#"> <img src="img/products/img-1.jpg" alt=""></a>
-																			<div class="card-product__price">1 200 ₽</div><a class="card-product__title" href="#">Пробиотики из сухого верблюжьего молока TUODADA</a>
-																			<div class="card-product__btn js-card-product__btn--instock">
-																				<button class="btn btn--blue">Купить</button>
-																			</div>
-																			<div class="card-product__hideblock"> 
-																				<div class="card-product__hideblock-btn"> 
-																					<button class="btn btn--green">В корзину</button>
-																				</div>
-																				<div class="card-product__counter">
-																					<div class="counter js-counter">
-																						<div class="counter__btn js-counter-minus"> 
-																							<svg class="icon-minus">
-																								<use xlink:href="img/sprite.svg#minus"></use>
-																							</svg>
-																						</div>
-																						<div class="counter__input js-counter-input">
-																							<input type="text" value="1" maxlength="3">
-																						</div>
-																						<div class="counter__btn js-counter-plus"> 
-																							<svg class="icon-plus">
-																								<use xlink:href="img/sprite.svg#plus"></use>
-																							</svg>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
+								<div class="col-md-6"> 
+									<div class="reservation__form"> 
+										<!-- select-2-->
+										<div class="select-2">
+											<select class="js-select2">
+												<option value="#">Доставка от b2cpl</option>
+												<option value="#">Доставка от b2cpl</option>
+												<option value="#">Доставка от b2cpl</option>
+											</select>
+										</div>
+										<!-- /select-2-->
+										<!-- select-2-->
+										<div class="select-2">
+											<select class="js-select2">
+												<option value="#">Курьерская доставка </option>
+												<option value="#">Доставка почтой</option>
+												<option value="#">Самовывоз</option>
+											</select>
+										</div>
+										<!-- /select-2-->
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="reservation__item"> 
+							<div class="row gy-3">
+								<div class="col-md-6"> 
+									<div class="reservation__content"> 
+										<div class="reservation__num">003</div>
+										<div class="reservation__text"> 
+											<h2>ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h2>
+											<p>Широкий способ оплаты делает процесс покупки легким и непринужденным &#8318;</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6"> 
+									<div class="reservation__form"> </div>
+								</div>
+							</div>
+						</div>
+						<div class="reservation__line"> </div>
+						<div class="reservation__item"> 
+							<div class="row gy-3">
+								<div class="col-md-6"> 
+									<div class="reservation__content"> 
+										<div class="reservation__num">004</div>
+										<div class="reservation__text"> 
+											<h2>ЛИЧНЫЕ ДАННЫЕ</h2>
+											<p>Для продолжения заполните все обязательные поля (помеченные *)</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6"> 
+									<div class="reservation__form"> 
+										<!-- input-->
+										<div class="input">
+											<input type="text" placeholder="Ваше имя*">
+										</div>
+										<!-- /input-->
+										<!-- input-->
+										<div class="input">
+											<input type="text" placeholder="Ваша фамилия*">
+										</div>
+										<!-- /input-->
+										<!-- input-->
+										<div class="input">
+											<input type="text" placeholder="Ваш email*">
+										</div>
+										<!-- /input-->
+										<!-- input-->
+										<div class="input">
+											<input type="text" placeholder="Ваш телефон*">
+										</div>
+										<!-- /input-->
+										<!-- textarea-->
+										<div class="textarea">
+											<textarea placeholder="Дополнительная информация"></textarea>
+										</div>
+										<!-- /textarea-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reservation__line"> </div>
+						<div class="reservation__buttons"> 
+							<div class="btn btn--green-border">Отмена</div>
+							<button class="btn btn--blue" type="submit">Оформить</button>
+						</div>
 					</div>
-				</div>
-				<!-- /cross-sale-->
+				</form>
+				<!-- /reservation-->
 								<!-- banner-->
 								<div class="banner section section--mb120">
 									<div class="container"> 

@@ -1,0 +1,19 @@
+/* input */
+.input { 
+  input {
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border: 1px solid $border_color;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 26px;
+    &::placeholder {
+      color: $text_color;
+    }
+  }
+  &--index {
+    max-width: 230px;
+  }
+}
+/* /input */

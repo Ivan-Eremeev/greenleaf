@@ -1,0 +1,18 @@
+/* textarea */
+.textarea { 
+  textarea {
+    width: 100%;
+    height: 146px;
+    padding: 8px 16px;
+    border: 1px solid $border_color;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    line-height: 26px;
+    &::placeholder {
+      color: $text_color;
+    }
+  }
+}
+/* /textarea */

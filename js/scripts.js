@@ -544,4 +544,9 @@ window.onload = function () {
   }
   showCounterProductCatd();
 
+  // Select2 | Стилизация селектов
+  $('.js-select2').select2({
+    minimumResultsForSearch : Infinity,
+  });
+
 }

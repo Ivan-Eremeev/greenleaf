@@ -1,0 +1,156 @@
+extends core/base.pug
+
+block title 
+  title Оформление заказа
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              a(href="#") Интернет-магазин
+            li 
+              span Оформление заказа
+      // /breadcrumbs
+
+      // reservation
+      form(action="#").reservation.section
+        .container 
+
+          h1.title.title--green Оформление заказа
+
+          .reservation__line 
+
+          .reservation__item 
+            .row.gy-3
+              .col-md-6 
+                .reservation__content 
+                  .reservation__num 001
+                  .reservation__text 
+                    h2 ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ
+                    p 
+                      b Выберите населенный пункт, в котором вам наиболее удобно забрать ваш заказ.
+                    p Если в списке нет нужного адреса — обратитесь в тех. поддержку
+              .col-md-6 
+                .reservation__form 
+                  // select-2
+                  .select-2
+                    select.js-select2
+                      option(value="#") Доставка курьером
+                      option(value="#") Доставка почтой
+                      option(value="#") Самовывоз
+                  // /select-2
+
+                  // select-2
+                  .select-2
+                    select.js-select2(data-placeholder="Выберите пункт выдачи")
+                      option(value="") Здесь
+                      option(value="#") Тут
+                      option(value="#") Там
+                  // /select-2
+
+                  // input
+                  .input.input--index
+                    input(type="number" placeholder="Введите индекс")
+                  // /input
+              
+          .reservation__line 
+
+          .reservation__item 
+            .row.gy-3
+              .col-md-6 
+                .reservation__content 
+                  .reservation__num 002
+                  .reservation__text 
+                    h2 ИНФОРМАЦИЯ О ДОСТАВКЕ
+                    p 
+                      b Бесплатная доставка при сумме заказа от 3000 р. 
+                    p 
+                      mark Примерный срок доставки 03.06.2020 года
+                    p Представленный расчет доставки является оптимальным с точки зрения соотношения цены/качества. В случае если вы хотите изменить срок доставки, воспользуйтесь формой выбора службы доставки и ее тарифом.
+              .col-md-6 
+                .reservation__form 
+                  // select-2
+                  .select-2
+                    select.js-select2
+                      option(value="#") Доставка от b2cpl
+                      option(value="#") Доставка от b2cpl
+                      option(value="#") Доставка от b2cpl
+                  // /select-2
+
+                  // select-2
+                  .select-2
+                    select.js-select2
+                      option(value="#") Курьерская доставка 
+                      option(value="#") Доставка почтой
+                      option(value="#") Самовывоз
+                  // /select-2
+
+          .reservation__item 
+            .row.gy-3
+              .col-md-6 
+                .reservation__content 
+                  .reservation__num 003
+                  .reservation__text 
+                    h2 ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ
+                    p Широкий способ оплаты делает процесс покупки легким и непринужденным &#8318;
+              .col-md-6 
+                .reservation__form 
+
+          .reservation__line 
+                  
+          .reservation__item 
+            .row.gy-3
+              .col-md-6 
+                .reservation__content 
+                  .reservation__num 004
+                  .reservation__text 
+                    h2 ЛИЧНЫЕ ДАННЫЕ
+                    p Для продолжения заполните все обязательные поля (помеченные *)
+              .col-md-6 
+                .reservation__form 
+                  // input
+                  .input
+                    input(type="text" placeholder="Ваше имя*")
+                  // /input
+                  // input
+                  .input
+                    input(type="text" placeholder="Ваша фамилия*")
+                  // /input
+                  // input
+                  .input
+                    input(type="text" placeholder="Ваш email*")
+                  // /input
+                  // input
+                  .input
+                    input(type="text" placeholder="Ваш телефон*")
+                  // /input
+                  // textarea
+                  .textarea
+                    textarea(placeholder="Дополнительная информация")
+                  // /textarea
+
+          .reservation__line 
+
+          .reservation__buttons 
+            .btn.btn--green-border Отмена
+            button(type="submit").btn.btn--blue Оформить
+          
+      // /reservation
+
+      include blocks/banner.pug
+      +banner('section--mb120')
+
+      include blocks/scrool-up.pug
+
+    include core/footer.pug
