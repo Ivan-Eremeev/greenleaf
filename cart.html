@@ -7,7 +7,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
-		<title>Навигация по страницам</title>
+		<title>Корзина</title>
 		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -258,18 +258,267 @@
 			</header>
 			<!--	/header-->
 			<div class="content"> 
-				<div class="navpage"> 
-					<div class="container">
-						<h1>Навигация по страницам</h1>
+				<!-- breadcrumbs-->
+				<div class="breadcrumbs">
+					<div class="container"> 
 						<ul> 
-							<li> <a href="home.html">Главная</a></li>
-							<li> <a href="catalog.html">Каталог</a></li>
-							<li> <a href="category.html">Категория</a></li>
-							<li> <a href="product.html">Страница товара</a></li>
-							<li> <a href="cart.html">Корзина</a></li>
+							<li> <a href="#">Главная</a></li>
+							<li> <span>Корзина</span></li>
 						</ul>
 					</div>
 				</div>
+				<!-- /breadcrumbs-->
+				<!-- cart-->
+				<div class="cart section">
+					<div class="container"> 
+						<div class="title title--green">Корзина</div>
+						<div class="row gy-4">
+							<div class="col-lg-8"> 
+								<div class="cart__orders"> 
+									<div class="cart__order"> 
+										<div class="cart__img"> <img src="img/products/img-1.jpg" alt=""></div>
+										<div class="cart__body"> 
+											<div class="cart__content"> 
+												<div class="cart__sub">Продукты для здоровья</div>
+												<div class="cart__title">Пробиотики из сухого верблюжьего молока TUODADA</div>
+												<div class="cart__volume">Объем: 300 г</div>
+												<div class="cart__text">Конопляное масло — доступный и удобный в употреблении источник ценных жиров и микроэлементов, в нем содержится максимальное количество ненасыщенных жирных кислот.</div>
+											</div>
+											<div class="cart__controll"> 
+												<div class="cart__prices"> 
+													<div class="cart__price">1 000 Р</div>
+													<div class="cart__price-one">1 000 Р / шт.</div>
+												</div>
+												<div class="cart__counter"> 
+													<div class="counter js-counter">
+														<div class="counter__btn js-counter-minus"> 
+															<svg class="icon-minus">
+																<use xlink:href="img/sprite.svg#minus"></use>
+															</svg>
+														</div>
+														<div class="counter__input js-counter-input">
+															<input type="text" value="1" maxlength="3">
+														</div>
+														<div class="counter__btn js-counter-plus"> 
+															<svg class="icon-plus">
+																<use xlink:href="img/sprite.svg#plus"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="cart__close"> </div>
+											</div>
+										</div>
+									</div>
+									<div class="cart__order"> 
+										<div class="cart__img"> <img src="img/products/img-2.jpg" alt=""></div>
+										<div class="cart__body"> 
+											<div class="cart__content"> 
+												<div class="cart__sub">Продукты для здоровья</div>
+												<div class="cart__title">Стакан для получения оздоровительной воды</div>
+												<div class="cart__volume">Объем: 330 мл</div>
+												<div class="cart__text">Конопляное масло — доступный и удобный в употреблении источник ценных жиров и микроэлементов, в нем содержится максимальное количество ненасыщенных жирных кислот.</div>
+											</div>
+											<div class="cart__controll"> 
+												<div class="cart__prices"> 
+													<div class="cart__price">1 000 Р</div>
+													<div class="cart__price-one">1 000 Р / шт.</div>
+												</div>
+												<div class="cart__counter"> 
+													<div class="counter js-counter">
+														<div class="counter__btn js-counter-minus"> 
+															<svg class="icon-minus">
+																<use xlink:href="img/sprite.svg#minus"></use>
+															</svg>
+														</div>
+														<div class="counter__input js-counter-input">
+															<input type="text" value="1" maxlength="3">
+														</div>
+														<div class="counter__btn js-counter-plus"> 
+															<svg class="icon-plus">
+																<use xlink:href="img/sprite.svg#plus"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="cart__close"> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4"> 
+								<div class="cart__block"> 
+									<div class="cart__subtitle">Ваш заказ:</div>
+									<div class="cart__count"> <span>Товары</span><span>3</span></div>
+									<div class="cart__result"> <span>Итого</span><span>3 000 Р</span></div>
+									<div class="cart__btn"> <a class="btn btn--blue" href="#">Перейти к оформлению</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /cart-->
+				<!-- cross-sale-->
+				<div class="cross-sale section">
+					<div class="container"> 
+						<h2 class="cross-sale__title">Добавить к заказу:</h2>
+						<div class="cross-sale__cards"> 
+							<div class="row gy-3 justify-content-center"> 
+								<div class="col-lg-4 col-sm-6"> 
+																		<div class="card-product">
+																			<div class="card-product__top"> 
+																				<div class="card-product__stickers"> 
+																					<div class="card-product__sticker card-product__sticker--green">Новинка</div>
+																					<div class="card-product__sticker card-product__sticker--green-border">PV</div>
+																				</div>
+																				<div class="card-product__favorite"> 
+																					<label> 
+																						<input type="checkbox" name="favorite"><span> </span>
+																					</label>
+																				</div>
+																			</div><a class="card-product__img" href="#"> <img src="img/products/img-1.jpg" alt=""></a>
+																			<div class="card-product__price">1 200 ₽</div><a class="card-product__title" href="#">Пробиотики из сухого верблюжьего молока TUODADA</a>
+																			<div class="card-product__btn js-card-product__btn--instock">
+																				<button class="btn btn--blue">Купить</button>
+																			</div>
+																			<div class="card-product__hideblock"> 
+																				<div class="card-product__hideblock-btn"> 
+																					<button class="btn btn--green">В корзину</button>
+																				</div>
+																				<div class="card-product__counter">
+																					<div class="counter js-counter">
+																						<div class="counter__btn js-counter-minus"> 
+																							<svg class="icon-minus">
+																								<use xlink:href="img/sprite.svg#minus"></use>
+																							</svg>
+																						</div>
+																						<div class="counter__input js-counter-input">
+																							<input type="text" value="1" maxlength="3">
+																						</div>
+																						<div class="counter__btn js-counter-plus"> 
+																							<svg class="icon-plus">
+																								<use xlink:href="img/sprite.svg#plus"></use>
+																							</svg>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+								</div>
+								<div class="col-lg-4 col-sm-6"> 
+																		<div class="card-product">
+																			<div class="card-product__top"> 
+																				<div class="card-product__stickers"> 
+																					<div class="card-product__sticker card-product__sticker--green">Новинка</div>
+																					<div class="card-product__sticker card-product__sticker--green-border">PV</div>
+																				</div>
+																				<div class="card-product__favorite"> 
+																					<label> 
+																						<input type="checkbox" name="favorite"><span> </span>
+																					</label>
+																				</div>
+																			</div><a class="card-product__img" href="#"> <img src="img/products/img-1.jpg" alt=""></a>
+																			<div class="card-product__price">1 200 ₽</div><a class="card-product__title" href="#">Пробиотики из сухого верблюжьего молока TUODADA</a>
+																			<div class="card-product__btn js-card-product__btn--instock">
+																				<button class="btn btn--blue">Купить</button>
+																			</div>
+																			<div class="card-product__hideblock"> 
+																				<div class="card-product__hideblock-btn"> 
+																					<button class="btn btn--green">В корзину</button>
+																				</div>
+																				<div class="card-product__counter">
+																					<div class="counter js-counter">
+																						<div class="counter__btn js-counter-minus"> 
+																							<svg class="icon-minus">
+																								<use xlink:href="img/sprite.svg#minus"></use>
+																							</svg>
+																						</div>
+																						<div class="counter__input js-counter-input">
+																							<input type="text" value="1" maxlength="3">
+																						</div>
+																						<div class="counter__btn js-counter-plus"> 
+																							<svg class="icon-plus">
+																								<use xlink:href="img/sprite.svg#plus"></use>
+																							</svg>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 d-sm-none d-lg-block">
+																		<div class="card-product">
+																			<div class="card-product__top"> 
+																				<div class="card-product__stickers"> 
+																					<div class="card-product__sticker card-product__sticker--green">Новинка</div>
+																					<div class="card-product__sticker card-product__sticker--green-border">PV</div>
+																				</div>
+																				<div class="card-product__favorite"> 
+																					<label> 
+																						<input type="checkbox" name="favorite"><span> </span>
+																					</label>
+																				</div>
+																			</div><a class="card-product__img" href="#"> <img src="img/products/img-1.jpg" alt=""></a>
+																			<div class="card-product__price">1 200 ₽</div><a class="card-product__title" href="#">Пробиотики из сухого верблюжьего молока TUODADA</a>
+																			<div class="card-product__btn js-card-product__btn--instock">
+																				<button class="btn btn--blue">Купить</button>
+																			</div>
+																			<div class="card-product__hideblock"> 
+																				<div class="card-product__hideblock-btn"> 
+																					<button class="btn btn--green">В корзину</button>
+																				</div>
+																				<div class="card-product__counter">
+																					<div class="counter js-counter">
+																						<div class="counter__btn js-counter-minus"> 
+																							<svg class="icon-minus">
+																								<use xlink:href="img/sprite.svg#minus"></use>
+																							</svg>
+																						</div>
+																						<div class="counter__input js-counter-input">
+																							<input type="text" value="1" maxlength="3">
+																						</div>
+																						<div class="counter__btn js-counter-plus"> 
+																							<svg class="icon-plus">
+																								<use xlink:href="img/sprite.svg#plus"></use>
+																							</svg>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /cross-sale-->
+								<!-- banner-->
+								<div class="banner section section--mb120">
+									<div class="container"> 
+										<div class="banner__block"> 
+											<div class="banner__img"> <img src="img/leaves.png" alt=""></div>
+											<div class="banner__content"> 
+												<div class="subtitle subtitle--white">Получите больше преимуществ работая с нами</div><a class="banner__link" href="#">Узнайте подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /banner-->
+				<!-- scrool-up-->
+				<div class="scrool-up js-scrollup">
+					<div class="scrool-up__arrow"> 
+						<svg class="icon-arrow-middle">
+							<use xlink:href="img/sprite.svg#arrow-middle"></use>
+						</svg>
+					</div>
+					<div class="scrool-up__dog"> 
+						<svg class="icon-dog">
+							<use xlink:href="img/sprite.svg#dog"></use>
+						</svg>
+					</div>
+				</div>
+				<!-- /scrool-up-->
 			</div>
 			<!-- footer-->
 			<footer class="footer">

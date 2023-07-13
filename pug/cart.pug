@@ -1,0 +1,115 @@
+extends core/base.pug
+
+block title 
+  title Корзина
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              span Корзина
+      // /breadcrumbs
+
+      // cart
+      .cart.section
+        .container 
+
+          .title.title--green Корзина
+
+          .row.gy-4
+            .col-lg-8 
+              .cart__orders 
+                .cart__order 
+                  .cart__img 
+                    img(src="img/products/img-1.jpg", alt="")
+                  .cart__body 
+                    .cart__content 
+                      .cart__sub Продукты для здоровья
+                      .cart__title Пробиотики из сухого верблюжьего молока TUODADA
+                      .cart__volume Объем: 300 г
+                      .cart__text Конопляное масло — доступный и удобный в употреблении источник ценных жиров и микроэлементов, в нем содержится максимальное количество ненасыщенных жирных кислот.
+                    .cart__controll 
+                      .cart__prices 
+                        .cart__price 1 000 Р
+                        .cart__price-one 1 000 Р / шт.
+                      .cart__counter 
+                        .counter.js-counter
+                          .counter__btn.js-counter-minus 
+                            svg(class="icon-minus")
+                              use(xlink:href="img/sprite.svg#minus")
+                          .counter__input.js-counter-input
+                            input(type="text" value="1" maxlength="3")
+                          .counter__btn.js-counter-plus 
+                            svg(class="icon-plus")
+                              use(xlink:href="img/sprite.svg#plus")
+                      .cart__close 
+                .cart__order 
+                  .cart__img 
+                    img(src="img/products/img-2.jpg", alt="")
+                  .cart__body 
+                    .cart__content 
+                      .cart__sub Продукты для здоровья
+                      .cart__title Стакан для получения оздоровительной воды
+                      .cart__volume Объем: 330 мл
+                      .cart__text Конопляное масло — доступный и удобный в употреблении источник ценных жиров и микроэлементов, в нем содержится максимальное количество ненасыщенных жирных кислот.
+                    .cart__controll 
+                      .cart__prices 
+                        .cart__price 1 000 Р
+                        .cart__price-one 1 000 Р / шт.
+                      .cart__counter 
+                        .counter.js-counter
+                          .counter__btn.js-counter-minus 
+                            svg(class="icon-minus")
+                              use(xlink:href="img/sprite.svg#minus")
+                          .counter__input.js-counter-input
+                            input(type="text" value="1" maxlength="3")
+                          .counter__btn.js-counter-plus 
+                            svg(class="icon-plus")
+                              use(xlink:href="img/sprite.svg#plus")
+                      .cart__close 
+
+            .col-lg-4 
+              .cart__block 
+                .cart__subtitle Ваш заказ:
+                .cart__count 
+                  span Товары
+                  span 3
+                .cart__result 
+                  span Итого
+                  span 3 000 Р
+                .cart__btn 
+                  a(href="#").btn.btn--blue Перейти к оформлению
+      // /cart
+
+      // cross-sale
+      .cross-sale.section
+        .container 
+          h2.cross-sale__title Добавить к заказу:
+          .cross-sale__cards 
+            .row.gy-3.justify-content-center 
+              .col-lg-4.col-sm-6 
+                include blocks/card-product.pug
+                +card-product
+              .col-lg-4.col-sm-6 
+                +card-product
+              .col-lg-4.col-sm-6.d-sm-none.d-lg-block
+                +card-product
+      // /cross-sale
+
+      include blocks/banner.pug
+      +banner('section--mb120')
+
+      include blocks/scrool-up.pug
+
+    include core/footer.pug
