@@ -64,6 +64,76 @@
       }
     }
   }
+  &__form-radio {
+    > * {
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__radio-item {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+    user-select: none;
+    input {
+      position: absolute;
+      visibility: hidden;
+      &:checked {
+        ~ span {
+          .reservation__radio {
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__radio-span {
+    display: block;
+    padding-left: 36px;
+    position: relative;
+  }
+  &__radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $primary_color;
+    border-radius: 100%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    &:after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: $primary_color;
+      opacity: 0;
+    }
+  }
+  &__radio-content {
+    
+  }
+  &__radio-text {
+    
+  }
+  &__radio-icons {
+    display: flex;
+    align-items: center;
+    img {
+      display: block;
+      max-width: 75px;
+      max-height: 25px;
+      margin-right: 10px;
+    }
+  }
   @include media-breakpoint-down(md) {
     &__line {
       margin-bottom: 40px;

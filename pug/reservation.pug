@@ -105,7 +105,36 @@ block content
                     h2 ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ
                     p Широкий способ оплаты делает процесс покупки легким и непринужденным &#8318;
               .col-md-6 
-                .reservation__form 
+                .reservation__form-radio 
+
+                  label.reservation__radio-item 
+                    input(type="radio", name="pay" checked)
+                    span.reservation__radio-span 
+                      span.reservation__radio 
+                      span.reservation__radio-content 
+                        span.reservation__radio-text Банковской картой онлайн (Visa, MasterCard)
+                        span.reservation__radio-icons 
+                          img(src="img/icons-pay/img-1.png", alt="")
+                          img(src="img/icons-pay/img-2.png", alt="")
+
+                  label.reservation__radio-item 
+                    input(type="radio", name="pay")
+                    span.reservation__radio-span 
+                      span.reservation__radio 
+                      span.reservation__radio-content 
+                        span.reservation__radio-text Онлайн платежи (Яндекс.кошелек, QIWI, WebMoney)
+                        span.reservation__radio-icons 
+                          img(src="img/icons-pay/img-3.png", alt="")
+                          img(src="img/icons-pay/img-4.png", alt="")
+                          img(src="img/icons-pay/img-5.png", alt="")
+                          img(src="img/icons-pay/img-6.png", alt="")
+
+                  label.reservation__radio-item 
+                    input(type="radio", name="pay")
+                    span.reservation__radio-span 
+                      span.reservation__radio 
+                      span.reservation__radio-content 
+                        span.reservation__radio-text Наличными при получении
 
           .reservation__line 
                   

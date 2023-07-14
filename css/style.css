@@ -9266,6 +9266,75 @@ input[type=number]:focus {
   margin-right: 24px;
   color: #50BD38;
 }
+.reservation__form-radio > * {
+  margin-bottom: 24px;
+}
+.reservation__form-radio > *:last-child {
+  margin-bottom: 0;
+}
+.reservation__radio-item {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.reservation__radio-item input {
+  position: absolute;
+  visibility: hidden;
+}
+.reservation__radio-item input:checked ~ span .reservation__radio:after {
+  opacity: 1;
+}
+.reservation__radio-span {
+  display: block;
+  padding-left: 36px;
+  position: relative;
+}
+.reservation__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #50BD38;
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.reservation__radio:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #50BD38;
+  opacity: 0;
+}
+.reservation__radio-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.reservation__radio-icons img {
+  display: block;
+  max-width: 75px;
+  max-height: 25px;
+  margin-right: 10px;
+}
 @media (max-width: 768.98px) {
   .reservation__line {
     margin-bottom: 40px;
