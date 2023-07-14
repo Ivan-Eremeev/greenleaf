@@ -142,5 +142,16 @@
       margin-bottom: 40px;
     }
   }
+  @include media-breakpoint-down(sm) {
+    &__buttons {
+      .btn {
+        width: calc(50% - 12px);
+        max-width: none;
+      }
+    }
+    &__content {
+      display: block;
+    }
+  }
 }
 /* /reservation */

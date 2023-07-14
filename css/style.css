@@ -9343,6 +9343,15 @@ input[type=number]:focus {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 575.98px) {
+  .reservation__buttons .btn {
+    width: calc(50% - 12px);
+    max-width: none;
+  }
+  .reservation__content {
+    display: block;
+  }
+}
 
 /* /reservation */
 /* footer */
