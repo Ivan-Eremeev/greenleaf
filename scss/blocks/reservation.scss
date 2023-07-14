@@ -24,6 +24,12 @@
   &__text {
     font-size: 18px;
     line-height: 26px;
+    div {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     h1,h2,h3,h4,h5,h6 {
       font-size: 20px;
       color: $primary_color;
@@ -42,6 +48,13 @@
     mark {
       background-color: transparent;
       color: $secondary_color;
+    }
+    small {
+      display: block;
+      padding-top: 16px;
+      border-top: 1px solid $border_color;
+      font-size: 12px;
+      line-height: 18px;
     }
   }
   &__form {
@@ -62,6 +75,9 @@
         margin-right: 24px;
         color: $primary_color;
       }
+    }
+    &--mb80 {
+      margin-bottom: 80px;
     }
   }
   &__form-radio {
@@ -140,6 +156,11 @@
     }
     &__item {
       margin-bottom: 40px;
+    }
+    &__buttons {
+      &--mb80 {
+        margin-bottom: 40px;
+      }
     }
   }
   @include media-breakpoint-down(sm) {

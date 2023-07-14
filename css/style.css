@@ -9225,6 +9225,12 @@ input[type=number]:focus {
   font-size: 18px;
   line-height: 26px;
 }
+.reservation__text div {
+  margin-bottom: 16px;
+}
+.reservation__text div:last-child {
+  margin-bottom: 0;
+}
 .reservation__text h1, .reservation__text h2, .reservation__text h3, .reservation__text h4, .reservation__text h5, .reservation__text h6 {
   font-size: 20px;
   color: #50BD38;
@@ -9243,6 +9249,13 @@ input[type=number]:focus {
 .reservation__text mark {
   background-color: transparent;
   color: #00598B;
+}
+.reservation__text small {
+  display: block;
+  padding-top: 16px;
+  border-top: 1px solid #D4D9DF;
+  font-size: 12px;
+  line-height: 18px;
 }
 .reservation__form > * {
   margin-bottom: 8px;
@@ -9265,6 +9278,9 @@ input[type=number]:focus {
 .reservation__buttons .btn--green-border {
   margin-right: 24px;
   color: #50BD38;
+}
+.reservation__buttons--mb80 {
+  margin-bottom: 80px;
 }
 .reservation__form-radio > * {
   margin-bottom: 24px;
@@ -9340,6 +9356,9 @@ input[type=number]:focus {
     margin-bottom: 40px;
   }
   .reservation__item {
+    margin-bottom: 40px;
+  }
+  .reservation__buttons--mb80 {
     margin-bottom: 40px;
   }
 }
