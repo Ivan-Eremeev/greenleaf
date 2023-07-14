@@ -9351,6 +9351,13 @@ input[type=number]:focus {
   max-height: 25px;
   margin-right: 10px;
 }
+.reservation__map {
+  height: 100%;
+}
+.reservation__map .yandex-map {
+  height: 100%;
+  min-height: 300px;
+}
 @media (max-width: 768.98px) {
   .reservation__line {
     margin-bottom: 40px;
@@ -9369,6 +9376,9 @@ input[type=number]:focus {
   }
   .reservation__content {
     display: block;
+  }
+  .reservation__map {
+    min-height: 200px;
   }
 }
 

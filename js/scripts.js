@@ -549,4 +549,63 @@ window.onload = function () {
     minimumResultsForSearch : Infinity,
   });
 
+  // Yandex map | Карта "Москва"
+  if ($('.yandex-map').length) {
+    ymaps.ready(init);
+  }
+
+  function init() {
+    let myMap1 = new ymaps.Map('map1', {
+      center: [55.84731056888396, 37.62899899999996],
+      zoom: 17,
+      controls: ['zoomControl']
+    });
+    let myPlacemark1 = new ymaps.Placemark([55.84731056888396, 37.62899899999996], null, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-mark.png',
+      iconImageSize: [50, 65],
+      iconImageOffset: [-25, -60]
+    });
+    myMap1.geoObjects.add(myPlacemark1);
+
+    let myMap2 = new ymaps.Map('map2', {
+      center: [41.34448007414508, 69.32973699999991],
+      zoom: 17,
+    controls: ['zoomControl']
+    });
+    let myPlacemark2 = new ymaps.Placemark([41.34448007414508, 69.32973699999991], null, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-mark.png',
+      iconImageSize: [50, 65],
+      iconImageOffset: [-25, -60]
+    });
+    myMap2.geoObjects.add(myPlacemark2);
+
+    let myMap3 = new ymaps.Map('map3', {
+      center: [51.09314157266934, 71.426881],
+      zoom: 17,
+      controls: ['zoomControl']
+    });
+    let myPlacemark3 = new ymaps.Placemark([51.09314157266934, 71.426881], null, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-mark.png',
+      iconImageSize: [50, 65],
+      iconImageOffset: [-25, -60]
+    });
+    myMap3.geoObjects.add(myPlacemark3);
+
+    let myMap4 = new ymaps.Map('map4', {
+      center: [47.9204397042839, 106.91725434390258],
+      zoom: 17,
+      controls: ['zoomControl']
+    });
+    let myPlacemark4 = new ymaps.Placemark([47.9204397042839, 106.91725434390258], null, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-mark.png',
+      iconImageSize: [50, 65],
+      iconImageOffset: [-25, -60]
+    });
+    myMap4.geoObjects.add(myPlacemark4);
+  }
+
 }

@@ -150,6 +150,13 @@
       margin-right: 10px;
     }
   }
+  &__map {
+    height: 100%;
+    .yandex-map {
+      height: 100%;
+      min-height: 300px;
+    }
+  }
   @include media-breakpoint-down(md) {
     &__line {
       margin-bottom: 40px;
@@ -172,6 +179,9 @@
     }
     &__content {
       display: block;
+    }
+    &__map {
+      min-height: 200px;
     }
   }
 }
