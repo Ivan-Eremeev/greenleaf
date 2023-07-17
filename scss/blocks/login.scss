@@ -1,0 +1,74 @@
+/* login */
+.login { 
+  &__img {
+    height: 100vh;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  &__block {
+    width: 100%;
+    max-width: 430px;
+  }
+  &__logo {
+    display: inline-block;
+    margin-bottom: 48px;
+  }
+  &__links {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 24px;
+    a {
+      margin-right: 16px;
+      color: $gray_color;
+      @include media-breakpoint-up(md) {
+        &:hover {
+          color: $primary_color;
+        }
+      }
+      &.active {
+        color: $text_color;
+      }
+    }
+  }
+  &__form {
+    .input {
+      margin-bottom: 16px;
+      input {
+        background-color: #F3F3F6;
+      }
+    }
+  }
+  &__remember {
+    margin-top: 8px;
+    font-size: 10px;
+    line-height: 14px;
+    a {
+      color: $gray_color;
+      @include media-breakpoint-up(md) {
+        &:hover {
+          color: $primary_color;
+        }
+      }
+    }
+  }
+  &__btn {
+    .btn {
+      width: 100%;
+      max-width: 160px;
+      margin-top: 48px;
+    }
+  }
+}
+/* /login */

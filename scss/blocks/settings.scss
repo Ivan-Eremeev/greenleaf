@@ -44,6 +44,9 @@ body {
       padding-top: 60px;
     }
   }
+  &--no-padding {
+    padding-top: 0;
+  }
 }
 .navpage {
   padding: 100px 0;

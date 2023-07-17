@@ -35,10 +35,11 @@
   &__items {
     margin-bottom: 48px;
     .row {
-      margin-top: -16px;
+      margin-top: -32px;
       margin-left: -8px;
       margin-right: -8px;
       > * {
+        margin-top: 32px;
         padding-left: 8px;
         padding-right: 8px;
       }
