@@ -105,42 +105,7 @@ block content
                     li Велком-пакет включающий в себя план развития, опытное комьюнити и многое другое
       // /benefit
 
-      // brands
-      .brands.section
-        .container 
-          h2.subtitle Наши бренды:
-        .brands__slider 
-          #sliderBrabds 
-            .swiper-wrapper 
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-1.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-2.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-3.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-4.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-5.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-6.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-7.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-8.png", alt="")
-              .swiper-slide 
-                .brands__item 
-                  img(src="img/brands/img-9.png", alt="")
-          .brands__pagination.swiper-pagination
-      // /brands
+      include blocks/brands.pug
 
       include blocks/cards-slider.pug
       +cards-slider('Новинки')

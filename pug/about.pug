@@ -1,0 +1,149 @@
+extends core/base.pug
+
+block title 
+  title О компании Greenleaf
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              span О компании
+      // /breadcrumbs
+
+      // about
+      .about.section
+        .container 
+          h1.title.title--green О компании Greenleaf
+          .row.gy-3
+            .col-lg-6 
+              .about__video 
+                .js-youtube#lyh2kAjcmSY
+            .col-lg-6 
+              .about__text 
+                p 
+                  b С самого начала своего развития компания была ориентирована на самые высокие технологии в области производства товаров широкого спроса. Основной акцент был сделан на качество и безопасность продукции.
+                p Научно-техническая группа FAMALL постоянно наращивала темпы своего роста и постепенно превратилась в научного первопроходца и лидера китайской биотехнологической промышленности.
+                p Наша компания уделяет особое внимание научным разработкам, умному производству, онлайн-продажам, физическим магазинам, продуманной логистике, защите данных, разработке программного обеспечения, контенту и стримингу в сфере электронной коммерции.
+                p Задавшись целью развивать международный рынок, были открыты филиалы в более чем 30 странах и регионах мира: в Юго-Восточной Азии, Африке, Восточной Европе, странах СНГ, России.
+      // /about
+
+      // statistics
+      .statistics
+        .container 
+          .row.gy-3 
+            .col-lg-6 
+              .statistics__text 
+                h2 Наша миссия:
+                p Миссия Greenleaf — это создавать уникальный высокотехнологичный продукт, который станет частью вашей жизни. Мы всегда в поисках новых качественных экологичных товаров!
+            .col-lg-6 
+              .statistics__items 
+                ul 
+                  li 
+                    span 300 000
+                    | партнёров Greenleaf уже с нами
+                  li 
+                    span 2391
+                    | истории успеха мы услышали
+                  li 
+                    span 30
+                    | стран мира работает с Greenleaf
+      // /statistics
+
+      // map
+      .map.section 
+        .container 
+          .map__block 
+            h2 Главный офис и шоурум в г. Москва
+            p 
+              b Офис компании располагается в г. Москва, по адресу:
+              | г. Москва, Сельскохозяйственная ул, 38к1
+            p 
+              b В нашем шоуруме представлен широкий выбор продукции, мы всегда вам рады с:<br>
+              | Пн-Чт с 10:00 до 19:00<br>Пт-Сб с 10:00 до 18:00<br>Вс — Выходной
+        #map
+      // /map
+
+      // leaders
+      .leaders.section 
+        .container 
+          .leaders__title Наши лидеры
+          .leaders__text 
+            .row.gy-3 
+              .col-lg-6 
+                .leaders__subtitle ТОП лидеры сетевого маркетинга — это люди, играющие ведущую роль в своих сетевых компаниях, главные дистрибьюторы с тысячными структурами. 
+              .col-lg-6 
+                .leaders__subtext Известно, что в сетевом маркетинге невозможно добиться успеха в одиночку, это бизнес команды, сплоченные одной идеей. Лидеры на основании своего опыта обучают свою команду, своих дистрибьюторов навыкам создания успешной бизнес структуры.
+          .leaders__items 
+            .row.row-cols-xl-6.row-cols-lg-5.row-cols-md-4.row-cols-sm-3.row-cols-2
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-1.jpg", alt="")
+                  .leaders__name Александр Лазарев
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-2.jpg", alt="")
+                  .leaders__name Виталий Бугров
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-3.jpg", alt="")
+                  .leaders__name Светлана Опалева
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-4.jpg", alt="")
+                  .leaders__name Наталья Степина
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-5.jpg", alt="")
+                  .leaders__name Франческа Курчатова
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-6.jpg", alt="")
+                  .leaders__name Илья Максименко
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-7.jpg", alt="")
+                  .leaders__name Татьяна Михеева
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-8.jpg", alt="")
+                  .leaders__name Татьяна Толчнева
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-9.jpg", alt="")
+                  .leaders__name Дильбар Усманова
+              .col 
+                .leaders__item 
+                  .leaders__photo 
+                    img(src="img/leaders/img-10.jpg", alt="")
+                  .leaders__name Орозгуль Парханова
+          .leaders__btn 
+            a(href="#").btn.btn--blue Стать партнером
+      // /leaders
+
+      include blocks/brands.pug
+
+      include blocks/scrool-up.pug
+
+    include core/footer.pug
+
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")

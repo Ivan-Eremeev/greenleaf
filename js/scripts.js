@@ -549,12 +549,12 @@ window.onload = function () {
     minimumResultsForSearch : Infinity,
   });
 
-  // Yandex map | Карта "Москва"
+  // Yandex map | Кары на странице контактов
   if ($('.yandex-map').length) {
-    ymaps.ready(init);
+    ymaps.ready(initMapsContact);
   }
 
-  function init() {
+  function initMapsContact() {
     let myMap1 = new ymaps.Map('map1', {
       center: [55.84731056888396, 37.62899899999996],
       zoom: 17,
@@ -606,6 +606,78 @@ window.onload = function () {
       iconImageOffset: [-25, -60]
     });
     myMap4.geoObjects.add(myPlacemark4);
+
+    let myMap5 = new ymaps.Map('map5', {
+      center: [55.84731056888396, 37.62899899999996],
+      zoom: 17,
+      controls: ['zoomControl'],
+    });
+    let myPlacemark5 = new ymaps.Placemark([55.84731056888396, 37.62899899999996], null, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-mark.png',
+      iconImageSize: [50, 65],
+      iconImageOffset: [-25, -60]
+    });
+    myMap5.geoObjects.add(myPlacemark5);
+    myMap5.behaviors.disable('scrollZoom');
   }
+
+  // Yandex map | Кары на странице контактов
+  if ($('#map').length) {
+    ymaps.ready(initMapAbout);
+  }
+
+  function initMapAbout() {
+    let myMap = new ymaps.Map('map', {
+      center: [55.84675525612561, 37.62902045767207],
+      zoom: 17,
+      controls: ['zoomControl'],
+    });
+    let myPlacemark = new ymaps.Placemark([55.84731056888396, 37.62899899999996], null, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-mark.png',
+      iconImageSize: [50, 65],
+      iconImageOffset: [-25, -60]
+    });
+    myMap.geoObjects.add(myPlacemark);
+    myMap.behaviors.disable('scrollZoom');
+  }
+
+  // Видео youtube для страницы
+  function uploadYoutubeVideo() {
+    if ($(".js-youtube")) {
+
+      $(".js-youtube").each(function () {
+        // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
+        $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
+
+        // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
+        $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
+
+        $(this).one('click', function () {
+          // создаем iframe со включенной опцией autoplay
+          let videoId = $(this).attr('id'),
+              iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
+
+          $(this).addClass('active');
+  
+          if ($(this).data('params')) iframe_url += '&' + $(this).data('params');
+  
+          // Высота и ширина iframe должны быть такими же, как и у родительского блока
+          let iframe = $('<iframe/>', {
+            'frameborder': '0',
+            'src': iframe_url,
+            'allow': "autoplay"
+          })
+  
+          // Заменяем миниатюру HTML5 плеером с YouTube
+          $(this).append(iframe);
+  
+        });
+      });
+
+    }
+  };
+  uploadYoutubeVideo();
 
 }

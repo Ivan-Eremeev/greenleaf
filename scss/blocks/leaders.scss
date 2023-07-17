@@ -1,0 +1,79 @@
+/* leaders */
+.leaders {
+  .container {
+    padding-bottom: 80px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: $border_color;
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+  &__text {
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $text_color_light;
+  }
+  &__subtext {
+    color: $text_color_light;
+  }
+  &__items {
+    margin-bottom: 48px;
+    .row {
+      margin-top: -16px;
+      margin-left: -8px;
+      margin-right: -8px;
+      > * {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+  &__item {
+    
+  }
+  &__photo {
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    background-color: $border_color;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  &__name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+  }
+  @include media-breakpoint-down(md) {
+    .container {
+      padding-bottom: 50px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__btn {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+/* /leaders */

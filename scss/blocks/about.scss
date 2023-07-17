@@ -1,0 +1,67 @@
+/* about */
+.about { 
+  &__video {
+    height: 480px;
+    .js-youtube {
+      height: 100%;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+      &:after {
+        content: '';
+        display: block;
+        background-color: rgba(80, 189, 56, 0.40);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+      &.active {
+        &:after {
+          display: none;
+        }
+        .video__play {
+          display: none;
+        }
+      }
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    p {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    b {
+      font-weight: 600;
+    }
+  }
+  .video__play {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+  }
+  @include media-breakpoint-down(md) {
+    &__video {
+      height: 320px;
+    }
+  }
+}
+/* /about */

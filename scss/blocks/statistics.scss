@@ -1,0 +1,65 @@
+/* statistics */
+.statistics { 
+  padding: 48px 0;
+  background-color: $primary_color;
+  color: #fff;
+  &__text {
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  }
+  &__items {
+    ul {
+      display: flex;
+      margin-left: -16px;
+      margin-top: -16px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      li {
+        margin-left: 16px;
+        margin-top: 16px;
+        span {
+          display: block;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 54px;
+          margin-bottom: 24px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__items {
+      ul {
+        li {
+          span {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__items {
+      ul {
+        flex-wrap: wrap;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/* /statistics */
