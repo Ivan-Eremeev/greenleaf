@@ -13,27 +13,24 @@ block content
 
       // login
       .login
-        .row.g-0
-          .col-lg-7.col-md-6.d-md-block.d-none
-            .login__img 
-              img(src="img/login-1.jpg", alt="")
-          .col-lg-5.col-md-6 
-            .login__content 
-              .login__block 
-                a(href="#").login__logo 
-                  img(src="img/logo.svg", alt="")
-                .login__links 
-                  a(href="#").active Sign in
-                  a(href="#") Регистрация
-                form(action="#").login__form 
-                  .input 
-                    input(type="text" placeholder="Логин")
-                  .input 
-                    input(type="password" placeholder="Пароль")
-                    .login__remember 
-                      a(href="#") Забыли пароль?
-                  .login__btn 
-                    button(type="submit").btn.btn--blue Войти
+        .login__img 
+          img(src="img/login-1.jpg", alt="")
+        .login__content 
+          .login__block 
+            a(href="#").login__logo 
+              img(src="img/logo.svg", alt="")
+            .login__links 
+              a(href="#").active Sign in
+              a(href="#") Регистрация
+            form(action="#").login__form 
+              .input 
+                input(type="text" placeholder="Логин")
+              .input 
+                input(type="password" placeholder="Пароль")
+                .login__remember 
+                  a(href="#") Забыли пароль?
+              .login__btn 
+                button(type="submit").btn.btn--blue Войти
       // /login
 
     //- include core/footer.pug

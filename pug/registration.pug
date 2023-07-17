@@ -1,0 +1,45 @@
+extends core/base.pug
+
+block title 
+  title Регистрация
+
+block content
+
+  .page 
+
+    //- include core/header.pug
+
+    .content.content--no-padding
+
+      // login
+      .login
+        .login__img 
+          img(src="img/login-2.jpg", alt="")
+        .login__content 
+          .login__block 
+            a(href="#").login__logo 
+              img(src="img/logo.svg", alt="")
+            .login__links 
+              a(href="#") Sign in
+              a(href="#").active Регистрация
+            .login__text-block 
+              h2 Для того чтобы зарегистрироваться!
+              p Вам необходимо найти спонсора, который будет помогать вам на протяжении всего пути к построению успешного и стабильного бизнеса, расскажет о компании, возможностях и продукции.
+              h2 Если у вас уже есть знакомый партнер Greenleaf
+              p Cвяжитесь с ним для регистрации и получения подробной информации о старте вашего бизнеса.
+            .login__text-block.login__text-block--gray 
+              h2 Если у вас нет знакомого партнера Greenleaf?
+              p Вы можете посмотреть наши соцсети, открыть там подписчиков аккаунта и среди них связаться с любым заинтересовавшим партнёром, который зарегистрирует вас в компании и расскажет с чего начинать.
+            .login__social 
+              ul 
+                li 
+                  a(href="#") 
+                    svg(class="icon-vk")
+                      use(xlink:href="img/sprite.svg#vk")
+                li 
+                  a(href="#") 
+                    svg(class="icon-telegram")
+                      use(xlink:href="img/sprite.svg#telegram")
+      // /login
+
+    //- include core/footer.pug
