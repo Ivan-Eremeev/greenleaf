@@ -86,5 +86,10 @@
       font-size: 20px;
     }
   }
+  @include media-breakpoint-down(sm) {
+    &__img {
+      height: 200px;
+    }
+  }
 }
 /* /card-news */

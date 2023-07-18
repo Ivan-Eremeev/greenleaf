@@ -1,0 +1,67 @@
+extends core/base.pug
+
+block title 
+  title Страница одной новости
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              span Визит Президента компании FAMALL в Казахстан г. Астана
+      // /breadcrumbs
+
+      // news-page
+      .news-page
+        .container 
+          h1.title.title--green Визит Президента компании FAMALL в Казахстан г. Астана
+          .news-page__head 
+            .news-page__date 08.02.2023
+            .news-page__social 
+              ul 
+                li 
+                  a(href="#") 
+                    svg(class="icon-vk")
+                      use(xlink:href="img/sprite.svg#vk")
+                li 
+                  a(href="#") 
+                    svg(class="icon-telegram")
+                      use(xlink:href="img/sprite.svg#telegram")
+          .news-page__video 
+            .js-youtube#lyh2kAjcmSY
+          .news-page__text 
+            p Комплексный анализ ситуации усиливает институциональный рекламный макет. Построение бренда, отбрасывая подробности, естественно определяет ролевой рекламный бриф. Стратегия предоставления скидок и бонусов транслирует институциональный план размещения, полагаясь на инсайдерскую информацию. До недавнего времени считалось, что баинг и селлинг неверно определяет медийный канал. Контекстная реклама наиболее полно специфицирует экспериментальный креатив, полагаясь на инсайдерскую информацию.
+          .news-page__tags 
+            ul 
+              li 
+                a(href="#") #видео
+              li 
+                a(href="#") #главные новости
+      // /news-page
+
+      // more-news
+      .more-news.section.section--mb120
+        .container 
+          .more-news__head 
+            .more-news__title Другие новости: 
+            a(href="#").more-news__more Посмотреть все
+          .more-news__cards 
+            .row.row-cols-md-2.row-cols-1
+              .col 
+                include blocks/card-news.pug
+                +card-news('Поездка в Дубаи 2023', 'img/news/img-7.jpg')
+              .col 
+                +card-news('Поездка в Тайланд 2023', 'img/news/img-8.jpg')
+      // /more-news
+
+    include core/footer.pug
