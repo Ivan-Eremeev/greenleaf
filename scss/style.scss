@@ -76,6 +76,7 @@ $secondary_color_hover: #004E7A;
 @import 'blocks/select2-custom';
 @import 'blocks/input';
 @import 'blocks/textarea';
+@import 'blocks/air-datepicker-custom.scss';
 // @import 'blocks/template';
 // @import 'blocks/popup';
 @import 'blocks/tabs';
@@ -107,6 +108,8 @@ $secondary_color_hover: #004E7A;
 @import 'blocks/map';
 @import 'blocks/leaders';
 @import 'blocks/login';
+@import 'blocks/news';
+@import 'blocks/card-news';
 
 @import 'blocks/footer';
 // @import 'blocks/menu';

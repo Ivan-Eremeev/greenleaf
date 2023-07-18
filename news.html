@@ -7,7 +7,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
-		<title>Оформление заказа</title>
+		<title>Новости</title>
 		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
 		<link rel="stylesheet" href="css/plugins/select2.min.css">
@@ -265,187 +265,145 @@
 					<div class="container"> 
 						<ul> 
 							<li> <a href="#">Главная</a></li>
-							<li> <a href="#">Интернет-магазин</a></li>
-							<li> <span>Оформление заказа</span></li>
+							<li> <span>Новости</span></li>
 						</ul>
 					</div>
 				</div>
 				<!-- /breadcrumbs-->
-				<!-- reservation-->
-				<form class="reservation section" action="#">
+				<!-- news-->
+				<div class="news section">
 					<div class="container"> 
-						<h1 class="title title--green">Оформление заказа</h1>
-						<div class="reservation__line"> </div>
-						<div class="reservation__item"> 
-							<div class="row gy-3">
-								<div class="col-lg-6 col-md-7">
-									<div class="reservation__content"> 
-										<div class="reservation__num">001</div>
-										<div class="reservation__text"> 
-											<h2>ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h2>
-											<p> <b>Выберите населенный пункт, в котором вам наиболее удобно забрать ваш заказ.</b></p>
-											<p>Если в списке нет нужного адреса — обратитесь в тех. поддержку</p>
-										</div>
-									</div>
+						<h1 class="title title--green">По популярности</h1>
+						<div class="news__sorter"> 
+							<!-- select-2-->
+							<div class="select-2">
+								<select class="js-select2">
+									<option value="#">По популярности 1</option>
+									<option value="#">По популярности 2</option>
+									<option value="#">По популярности 3</option>
+								</select>
+							</div>
+							<!-- /select-2-->
+							<!-- input-->
+							<div class="input input--has-arrow">
+								<input type="text" placeholder="По дате" id="airDatepicker">
+							</div>
+							<!-- /input-->
+						</div>
+						<div class="news__cards">
+							<div class="row row-cols-md-2 row-cols-1">
+								<div class="col"> 
+																		<!-- card-news-->
+																		<div class="card-news"><a class="card-news__img" href="#"> <img src="img/news/img-3.jpg" alt=""></a>
+																			<div class="card-news__content"> 
+																				<div class="card-news__date"> <a href="#">01 марта 2023</a></div>
+																				<div class="card-news__title"><a href="#">Визит Президента компании FAMALL в Казахстан г. Астана</a></div>
+																				<div class="card-news__items"> 
+																					<ul> 
+																						<li> <a href="#">#видео</a></li>
+																						<li> <a href="#">#главные новости</a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- /card-news-->
 								</div>
-								<div class="col-lg-6 col-md-5">
-									<div class="reservation__form"> 
-										<!-- select-2-->
-										<div class="select-2">
-											<select class="js-select2">
-												<option value="#">Доставка курьером</option>
-												<option value="#">Доставка почтой</option>
-												<option value="#">Самовывоз</option>
-											</select>
-										</div>
-										<!-- /select-2-->
-										<!-- select-2-->
-										<div class="select-2">
-											<select class="js-select2" data-placeholder="Выберите пункт выдачи">
-												<option value="">Здесь</option>
-												<option value="#">Тут</option>
-												<option value="#">Там</option>
-											</select>
-										</div>
-										<!-- /select-2-->
-										<!-- input-->
-										<div class="input input--index">
-											<input type="number" placeholder="Введите индекс">
-										</div>
-										<!-- /input-->
-									</div>
+								<div class="col"> 
+																		<!-- card-news-->
+																		<div class="card-news"><a class="card-news__img" href="#"> <img src="img/news/img-4.jpg" alt=""></a>
+																			<div class="card-news__content"> 
+																				<div class="card-news__date"> <a href="#">01 марта 2023</a></div>
+																				<div class="card-news__title"><a href="#">Конференция в г. Москва</a></div>
+																				<div class="card-news__items"> 
+																					<ul> 
+																						<li> <a href="#">#видео</a></li>
+																						<li> <a href="#">#главные новости</a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- /card-news-->
+								</div>
+								<div class="col"> 
+																		<!-- card-news-->
+																		<div class="card-news"><a class="card-news__img" href="#"> <img src="img/news/img-5.jpg" alt=""></a>
+																			<div class="card-news__content"> 
+																				<div class="card-news__date"> <a href="#">01 марта 2023</a></div>
+																				<div class="card-news__title"><a href="#">Фотографии с Конференции</a></div>
+																				<div class="card-news__items"> 
+																					<ul> 
+																						<li> <a href="#">#видео</a></li>
+																						<li> <a href="#">#главные новости</a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- /card-news-->
+								</div>
+								<div class="col"> 
+																		<!-- card-news-->
+																		<div class="card-news"><a class="card-news__img" href="#"> <img src="img/news/img-6.jpg" alt=""></a>
+																			<div class="card-news__content"> 
+																				<div class="card-news__date"> <a href="#">01 марта 2023</a></div>
+																				<div class="card-news__title"><a href="#">Конференция в г. Казань, 24 марта 2023</a></div>
+																				<div class="card-news__items"> 
+																					<ul> 
+																						<li> <a href="#">#видео</a></li>
+																						<li> <a href="#">#главные новости</a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- /card-news-->
+								</div>
+								<div class="col"> 
+																		<!-- card-news-->
+																		<div class="card-news"><a class="card-news__img" href="#"> <img src="img/news/img-7.jpg" alt=""></a>
+																			<div class="card-news__content"> 
+																				<div class="card-news__date"> <a href="#">01 марта 2023</a></div>
+																				<div class="card-news__title"><a href="#">Поездка в Дубаи 2023</a></div>
+																				<div class="card-news__items"> 
+																					<ul> 
+																						<li> <a href="#">#видео</a></li>
+																						<li> <a href="#">#главные новости</a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- /card-news-->
+								</div>
+								<div class="col"> 
+																		<!-- card-news-->
+																		<div class="card-news"><a class="card-news__img" href="#"> <img src="img/news/img-8.jpg" alt=""></a>
+																			<div class="card-news__content"> 
+																				<div class="card-news__date"> <a href="#">01 марта 2023</a></div>
+																				<div class="card-news__title"><a href="#">Поездка в Тайланд 2023</a></div>
+																				<div class="card-news__items"> 
+																					<ul> 
+																						<li> <a href="#">#видео</a></li>
+																						<li> <a href="#">#главные новости</a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- /card-news-->
 								</div>
 							</div>
-						</div>
-						<div class="reservation__line"> </div>
-						<div class="reservation__item"> 
-							<div class="row gy-3">
-								<div class="col-lg-6 col-md-7">
-									<div class="reservation__content"> 
-										<div class="reservation__num">002</div>
-										<div class="reservation__text"> 
-											<h2>ИНФОРМАЦИЯ О ДОСТАВКЕ</h2>
-											<p> <b>Бесплатная доставка при сумме заказа от 3000 р. </b></p>
-											<p> 
-												<mark>Примерный срок доставки 03.06.2020 года</mark>
-											</p>
-											<p>Представленный расчет доставки является оптимальным с точки зрения соотношения цены/качества. В случае если вы хотите изменить срок доставки, воспользуйтесь формой выбора службы доставки и ее тарифом.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-5">
-									<div class="reservation__form"> 
-										<!-- select-2-->
-										<div class="select-2">
-											<select class="js-select2">
-												<option value="#">Доставка от b2cpl</option>
-												<option value="#">Доставка от b2cpl</option>
-												<option value="#">Доставка от b2cpl</option>
-											</select>
-										</div>
-										<!-- /select-2-->
-										<!-- select-2-->
-										<div class="select-2">
-											<select class="js-select2">
-												<option value="#">Курьерская доставка </option>
-												<option value="#">Доставка почтой</option>
-												<option value="#">Самовывоз</option>
-											</select>
-										</div>
-										<!-- /select-2-->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="reservation__item"> 
-							<div class="row gy-3">
-								<div class="col-lg-6 col-md-7">
-									<div class="reservation__content"> 
-										<div class="reservation__num">003</div>
-										<div class="reservation__text"> 
-											<h2>ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h2>
-											<p>Широкий способ оплаты делает процесс покупки легким и непринужденным &#8318;</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-5">
-									<div class="reservation__form-radio"> 
-										<label class="reservation__radio-item"> 
-											<input type="radio" name="pay" checked><span class="reservation__radio-span"> <span class="reservation__radio"> </span><span class="reservation__radio-content"> <span class="reservation__radio-text">Банковской картой онлайн (Visa, MasterCard)</span><span class="reservation__radio-icons"> <img src="img/icons-pay/img-1.png" alt=""><img src="img/icons-pay/img-2.png" alt=""></span></span></span>
-										</label>
-										<label class="reservation__radio-item"> 
-											<input type="radio" name="pay"><span class="reservation__radio-span"> <span class="reservation__radio"> </span><span class="reservation__radio-content"> <span class="reservation__radio-text">Онлайн платежи (Яндекс.кошелек, QIWI, WebMoney)</span><span class="reservation__radio-icons"> <img src="img/icons-pay/img-3.png" alt=""><img src="img/icons-pay/img-4.png" alt=""><img src="img/icons-pay/img-5.png" alt=""><img src="img/icons-pay/img-6.png" alt=""></span></span></span>
-										</label>
-										<label class="reservation__radio-item"> 
-											<input type="radio" name="pay"><span class="reservation__radio-span"> <span class="reservation__radio"> </span><span class="reservation__radio-content"> <span class="reservation__radio-text">Наличными при получении</span></span></span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="reservation__line"> </div>
-						<div class="reservation__item"> 
-							<div class="row gy-3">
-								<div class="col-lg-6 col-md-7">
-									<div class="reservation__content"> 
-										<div class="reservation__num">004</div>
-										<div class="reservation__text"> 
-											<h2>ЛИЧНЫЕ ДАННЫЕ</h2>
-											<p>Для продолжения заполните все обязательные поля (помеченные *)</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-5">
-									<div class="reservation__form"> 
-										<!-- input-->
-										<div class="input">
-											<input type="text" placeholder="Ваше имя*">
-										</div>
-										<!-- /input-->
-										<!-- input-->
-										<div class="input">
-											<input type="text" placeholder="Ваша фамилия*">
-										</div>
-										<!-- /input-->
-										<!-- input-->
-										<div class="input">
-											<input type="text" placeholder="Ваш email*">
-										</div>
-										<!-- /input-->
-										<!-- input-->
-										<div class="input">
-											<input type="text" placeholder="Ваш телефон*">
-										</div>
-										<!-- /input-->
-										<!-- textarea-->
-										<div class="textarea">
-											<textarea placeholder="Дополнительная информация"></textarea>
-										</div>
-										<!-- /textarea-->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="reservation__line"> </div>
-						<div class="reservation__buttons"> 
-							<div class="btn btn--green-border">Отмена</div>
-							<button class="btn btn--blue" type="submit">Оформить</button>
 						</div>
 					</div>
-				</form>
-				<!-- /reservation-->
-								<!-- banner-->
-								<div class="banner section section--mb120">
-									<div class="container"> 
-										<div class="banner__block"> 
-											<div class="banner__img"> <img src="img/leaves.png" alt=""></div>
-											<div class="banner__content"> 
-												<div class="subtitle subtitle--white">Получите больше преимуществ работая с нами</div><a class="banner__link" href="#">Узнайте подробнее</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- /banner-->
+				</div>
+				<!-- /news-->
+				<!-- pagination-->
+				<div class="pagination">
+					<div class="container"> 
+						<ul> 
+							<li> <span>01</span></li>
+							<li> <a href="#">02</a></li>
+							<li> <a href="#">03</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- /pagination-->
 				<!-- scrool-up-->
 				<div class="scrool-up js-scrollup">
 					<div class="scrool-up__arrow"> 

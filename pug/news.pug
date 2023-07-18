@@ -1,0 +1,75 @@
+extends core/base.pug
+
+block title 
+  title Новости
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              span Новости
+      // /breadcrumbs
+
+      // news
+      .news.section
+        .container 
+
+          h1.title.title--green По популярности
+
+          .news__sorter 
+            // select-2
+            .select-2
+              select.js-select2
+                option(value="#") По популярности 1
+                option(value="#") По популярности 2
+                option(value="#") По популярности 3
+            // /select-2
+
+            // input
+            .input.input--has-arrow
+              input(type="text" placeholder="По дате")#airDatepicker
+            // /input
+
+          .news__cards
+            .row.row-cols-md-2.row-cols-1
+              .col 
+                include blocks/card-news.pug
+                +card-news('Визит Президента компании FAMALL в Казахстан г. Астана', 'img/news/img-3.jpg')
+              .col 
+                +card-news('Конференция в г. Москва', 'img/news/img-4.jpg')
+              .col 
+                +card-news('Фотографии с Конференции', 'img/news/img-5.jpg')
+              .col 
+                +card-news('Конференция в г. Казань, 24 марта 2023', 'img/news/img-6.jpg')
+              .col 
+                +card-news('Поездка в Дубаи 2023', 'img/news/img-7.jpg')
+              .col 
+                +card-news('Поездка в Тайланд 2023', 'img/news/img-8.jpg')
+      // /news
+
+      // pagination
+      .pagination
+        .container 
+          ul 
+            li 
+              span 01
+            li 
+              a(href="#") 02
+            li 
+              a(href="#") 03
+      // /pagination
+
+      include blocks/scrool-up.pug
+
+    include core/footer.pug

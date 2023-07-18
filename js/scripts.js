@@ -241,10 +241,10 @@ window.onload = function () {
   }
   benefitTextSlide();
 
-  // // Air Datepicker | Календарь
-  // new AirDatepicker('#airDatepicker', {
-  //   position: 'right top',
-  // });
+  // Air Datepicker | Календарь
+  new AirDatepicker('#airDatepicker', {
+    range: true,
+  });
 
   // // Magnific Popup | Попап окна
   // $('.open-popup-link').magnificPopup({

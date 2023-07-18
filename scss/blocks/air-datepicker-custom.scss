@@ -1,0 +1,15 @@
+/* air-datepicker-custom.scss */
+.air-datepicker-body--day-name {
+  font-weight: 600;
+  color: $primary_color;
+}
+.air-datepicker-nav--action path {
+  stroke: $secondary_color;
+}
+.air-datepicker-cell.-selected- {
+  background-color: $secondary_color;
+}
+.air-datepicker-cell.-selected-.-focus- {
+  background-color: $secondary_color;
+}
+/* /air-datepicker-custom.scss */

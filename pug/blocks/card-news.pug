@@ -1,0 +1,17 @@
+mixin card-news(title, imgSrc)
+  // card-news
+  .card-news
+    a(href="#").card-news__img 
+      img(src= imgSrc, alt="")
+    .card-news__content 
+      .card-news__date 
+        a(href="#") 01 марта 2023
+      .card-news__title
+        a(href="#")= title 
+      .card-news__items 
+        ul 
+          li 
+            a(href="#") #видео
+          li 
+            a(href="#") #главные новости
+  // /card-news
