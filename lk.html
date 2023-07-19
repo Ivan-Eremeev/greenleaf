@@ -276,8 +276,10 @@
 						<h1 class="title title--green">Личный кабинет</h1>
 						<div class="lk__body"> 
 							<div class="lk__sidebar"> 
-								<div class="lk__photo"> <img src="img/user.jpg" alt=""></div>
-								<div class="lk__name">Константин Константинов</div>
+								<div class="lk__user">
+									<div class="lk__photo"> <img src="img/user.jpg" alt=""></div>
+									<div class="lk__name">Константин Константинов</div>
+								</div>
 								<div class="lk__menu"> 
 									<ul>
 										<li> <a class="js-tabs-trigger active" href="#lkData">Мои данные</a></li>
@@ -293,17 +295,17 @@
 										<div class="lk__form-block"> 
 											<div class="lk__subtitle">Личная информация:</div>
 											<div class="row"> 
-												<div class="col-lg-6"> 
+												<div class="col-md-6"> 
 													<div class="input"> 
 														<input type="text" placeholder="Имя">
 													</div>
 												</div>
-												<div class="col-lg-6"> 
+												<div class="col-md-6"> 
 													<div class="input"> 
 														<input type="text" placeholder="Фамилия">
 													</div>
 												</div>
-												<div class="col-lg-6"> 
+												<div class="col-md-6"> 
 													<div class="input input--has-icon">
 														<input type="text" placeholder="Дата рождения" id="airDatepickerBirthday">
 														<svg class="icon-calendar">
@@ -311,14 +313,14 @@
 														</svg>
 													</div>
 												</div>
-												<div class="col-lg-6"> 
+												<div class="col-md-6"> 
 													<div class="lk__gender"> 
 														<div class="lk__gender-text">Пол: </div>
 														<label class="radio"> 
 															<input type="radio" name="gender"><span class="radio__circle"> </span><span>Мужской</span>
 														</label>
 														<label class="radio"> 
-															<input type="radio" name="gender"><span class="radio__circle"> </span><span>Мужской</span>
+															<input type="radio" name="gender"><span class="radio__circle"> </span><span>Женский</span>
 														</label>
 													</div>
 												</div>
@@ -327,27 +329,27 @@
 										<div class="lk__form-block"> 
 											<div class="lk__subtitle">Адрес доставки:</div>
 											<div class="row"> 
-												<div class="col-lg-6"> 
+												<div class="col-md-6"> 
 													<div class="input"> 
 														<input type="text" placeholder="Город">
 													</div>
 												</div>
-												<div class="col-lg-6"> 
+												<div class="col-md-6"> 
 													<div class="input"> 
 														<input type="text" placeholder="Улица">
 													</div>
 												</div>
-												<div class="col-lg-4"> 
+												<div class="col-md-4"> 
 													<div class="input"> 
 														<input type="number" placeholder="Дом">
 													</div>
 												</div>
-												<div class="col-lg-4"> 
+												<div class="col-md-4"> 
 													<div class="input"> 
 														<input type="number" placeholder="Корпус">
 													</div>
 												</div>
-												<div class="col-lg-4"> 
+												<div class="col-md-4"> 
 													<div class="input"> 
 														<input type="number" placeholder="Квартира">
 													</div>
@@ -375,12 +377,13 @@
 												<div class="lk__order-content"> 
 													<div class="lk__order-title">Заказ № 32378793-0109</div>
 													<div class="lk__order-date">от 06.05.2023</div>
-													<div class="lk__order-status lk__order-status--delivery">в доставке</div>
+													<div class="lk__order-status lk__order-status--delivery d-none d-sm-inline-block">в доставке</div>
 												</div>
 												<div class="lk__order-images"> 
 													<div class="lk__order-img"> <img src="img/products/img-1.jpg" alt=""></div>
 													<div class="lk__order-img"> <img src="img/products/img-2.jpg" alt=""></div>
 												</div>
+												<div class="lk__order-status lk__order-status--delivery d-inline-block d-sm-none">в доставке</div>
 											</div>
 										</div>
 										<div class="lk__line"> </div>
@@ -397,34 +400,37 @@
 												<div class="lk__order-content"> 
 													<div class="lk__order-title">Заказ № 32378793-0109</div>
 													<div class="lk__order-date">от 06.05.2023</div>
-													<div class="lk__order-status lk__order-status--delivery">в доставке</div>
+													<div class="lk__order-status lk__order-status--delivery d-none d-sm-inline-block">в доставке</div>
 												</div>
 												<div class="lk__order-images"> 
 													<div class="lk__order-img"> <img src="img/products/img-1.jpg" alt=""></div>
 													<div class="lk__order-img"> <img src="img/products/img-2.jpg" alt=""></div>
 												</div>
+												<div class="lk__order-status lk__order-status--delivery d-inline-block d-sm-none">в доставке</div>
 											</div>
 											<div class="lk__order"> 
 												<div class="lk__order-content"> 
 													<div class="lk__order-title">Заказ № 32378793-0112</div>
 													<div class="lk__order-date">от 06.05.2023</div>
-													<div class="lk__order-status lk__order-status--success">доставлен</div>
+													<div class="lk__order-status lk__order-status--success d-none d-sm-inline-block">доставлен</div>
 												</div>
 												<div class="lk__order-images"> 
 													<div class="lk__order-img"> <img src="img/products/img-1.jpg" alt=""></div>
 													<div class="lk__order-img"> <img src="img/products/img-2.jpg" alt=""></div>
 												</div>
+												<div class="lk__order-status lk__order-status--success d-inline-block d-sm-none">доставлен</div>
 											</div>
 											<div class="lk__order"> 
 												<div class="lk__order-content"> 
 													<div class="lk__order-title">Заказ № 32378793-0109</div>
 													<div class="lk__order-date">от 06.05.2023</div>
-													<div class="lk__order-status lk__order-status--refund">возврат</div>
+													<div class="lk__order-status lk__order-status--refund d-none d-sm-inline-block">возврат</div>
 												</div>
 												<div class="lk__order-images"> 
 													<div class="lk__order-img"> <img src="img/products/img-1.jpg" alt=""></div>
 													<div class="lk__order-img"> <img src="img/products/img-2.jpg" alt=""></div>
 												</div>
+												<div class="lk__order-status lk__order-status--refund d-inline-block d-sm-none">возврат</div>
 											</div>
 										</div>
 									</div>
@@ -435,7 +441,7 @@
 								<div class="js-tabs-content" data-href="#lkPossibility">
 									<h2 class="lk__title">Возможности партнера</h2>
 									<div class="lk__cards"> 
-										<div class="row row-cols-lg-2 row-cols-1">
+										<div class="row row-cols-md-2 row-cols-1">
 											<div class="col"> 
 												<div class="lk__card"> 
 													<div class="lk__card-img"> <img src="img/news/img-6.jpg" alt=""></div>

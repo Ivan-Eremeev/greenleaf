@@ -45,6 +45,7 @@
           padding: 8px 16px;
           color: $text_color_light;
           border-radius: 4px;
+          white-space: nowrap;
           &.active {
             background-color: #F3F3F6;
           }
@@ -200,6 +201,7 @@
     line-height: 26px;
     text-align: center;
     img {
+      max-width: 350px;
       margin-bottom: 40px;
     }
     p {
@@ -216,9 +218,6 @@
         margin-top: 64px;
       }
     }
-  }
-  &__card {
-    margin-bottom: 64px;
   }
   &__card-img {
     height: 360px;
@@ -259,6 +258,109 @@
           left: 5px;
         }
       }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__card-img {
+      height: 250px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__body {
+      flex-wrap: wrap;
+    }
+    &__sidebar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 64px;
+    }
+    &__name {
+      margin-bottom: 0;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .title {
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+    }
+    &__sidebar {
+      margin-bottom: 40px;
+    }
+    &__title {
+      margin-bottom: 24px;
+    }
+    &__subtitle {
+      margin-bottom: 16px;
+    }
+    &__form-block {
+      margin-bottom: 40px;
+      > .row {
+        margin-top: -16px;
+        > * {
+          margin-top: 16px;
+        }
+      }
+    }
+    &__contact {
+      padding: 8px 0;
+    }
+    &__line {
+      margin-bottom: 40px;
+    }
+    &__no-order {
+      img {
+        max-width: 200px;
+      }
+    }
+    &__cards {
+      > .row {
+        margin-top: -40px;
+        > * {
+          margin-top: 40px;
+        }
+      }
+    }
+    &__card-img {
+      margin-bottom: 24px;
+    }
+    &__card-content {
+      h1,h2,h3,h4,h5,h6 {
+        margin-bottom: 16px;
+      }
+    }
+    &__menu {
+      ul {
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    &__contact-item {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__contact-name {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__sidebar {
+      display: block;
+    }
+    &__name {
+      margin-bottom: 24px;
+    }
+    &__order {
+      display: block;
+    }
+    &__order-content {
+      margin-bottom: 16px;
+    }
+    &__order-images {
+      margin-bottom: 16px;
     }
   }
 }

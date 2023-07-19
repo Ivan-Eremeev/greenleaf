@@ -29,10 +29,12 @@ block content
 
             .lk__sidebar 
 
-              .lk__photo 
-                img(src="img/user.jpg", alt="")
+              .lk__user
 
-              .lk__name Константин Константинов
+                .lk__photo 
+                  img(src="img/user.jpg", alt="")
+
+                .lk__name Константин Константинов
 
               .lk__menu 
                 ul
@@ -54,18 +56,18 @@ block content
                   .lk__form-block 
                     .lk__subtitle Личная информация:
                     .row 
-                      .col-lg-6 
+                      .col-md-6 
                         .input 
                           input(type="text" placeholder="Имя")
-                      .col-lg-6 
+                      .col-md-6 
                         .input 
                           input(type="text" placeholder="Фамилия")
-                      .col-lg-6 
+                      .col-md-6 
                         .input.input--has-icon
                           input(type="text" placeholder="Дата рождения")#airDatepickerBirthday
                           svg(class="icon-calendar")
                             use(xlink:href="img/sprite.svg#calendar")
-                      .col-lg-6 
+                      .col-md-6 
                         .lk__gender 
                           .lk__gender-text Пол: 
                           label.radio 
@@ -75,24 +77,24 @@ block content
                           label.radio 
                             input(type="radio" name="gender")
                             span.radio__circle 
-                            span Мужской
+                            span Женский
 
                   .lk__form-block 
                     .lk__subtitle Адрес доставки:
                     .row 
-                      .col-lg-6 
+                      .col-md-6 
                         .input 
                           input(type="text" placeholder="Город")
-                      .col-lg-6 
+                      .col-md-6 
                         .input 
                           input(type="text" placeholder="Улица")
-                      .col-lg-4 
+                      .col-md-4 
                         .input 
                           input(type="number" placeholder="Дом")
-                      .col-lg-4 
+                      .col-md-4 
                         .input 
                           input(type="number" placeholder="Корпус")
-                      .col-lg-4 
+                      .col-md-4 
                         .input 
                           input(type="number" placeholder="Квартира")
 
@@ -114,12 +116,13 @@ block content
                       .lk__order-content 
                         .lk__order-title Заказ № 32378793-0109
                         .lk__order-date от 06.05.2023
-                        .lk__order-status.lk__order-status--delivery в доставке
+                        .lk__order-status.lk__order-status--delivery.d-none.d-sm-inline-block в доставке
                       .lk__order-images 
                         .lk__order-img 
                           img(src="img/products/img-1.jpg", alt="")
                         .lk__order-img 
                           img(src="img/products/img-2.jpg", alt="")
+                      .lk__order-status.lk__order-status--delivery.d-inline-block.d-sm-none в доставке
 
                   .lk__line 
 
@@ -138,34 +141,37 @@ block content
                       .lk__order-content 
                         .lk__order-title Заказ № 32378793-0109
                         .lk__order-date от 06.05.2023
-                        .lk__order-status.lk__order-status--delivery в доставке
+                        .lk__order-status.lk__order-status--delivery.d-none.d-sm-inline-block в доставке
                       .lk__order-images 
                         .lk__order-img 
                           img(src="img/products/img-1.jpg", alt="")
                         .lk__order-img 
                           img(src="img/products/img-2.jpg", alt="")
+                      .lk__order-status.lk__order-status--delivery.d-inline-block.d-sm-none в доставке
 
                     .lk__order 
                       .lk__order-content 
                         .lk__order-title Заказ № 32378793-0112
                         .lk__order-date от 06.05.2023
-                        .lk__order-status.lk__order-status--success доставлен
+                        .lk__order-status.lk__order-status--success.d-none.d-sm-inline-block доставлен
                       .lk__order-images 
                         .lk__order-img 
                           img(src="img/products/img-1.jpg", alt="")
                         .lk__order-img 
                           img(src="img/products/img-2.jpg", alt="")
+                      .lk__order-status.lk__order-status--success.d-inline-block.d-sm-none доставлен
 
                     .lk__order 
                       .lk__order-content 
                         .lk__order-title Заказ № 32378793-0109
                         .lk__order-date от 06.05.2023
-                        .lk__order-status.lk__order-status--refund возврат
+                        .lk__order-status.lk__order-status--refund.d-none.d-sm-inline-block возврат
                       .lk__order-images 
                         .lk__order-img 
                           img(src="img/products/img-1.jpg", alt="")
                         .lk__order-img 
                           img(src="img/products/img-2.jpg", alt="")
+                      .lk__order-status.lk__order-status--refund.d-inline-block.d-sm-none возврат
 
                 .lk__no-order 
                   img(src="img/cart-lk.svg", alt="")
@@ -178,7 +184,7 @@ block content
                 h2.lk__title Возможности партнера
 
                 .lk__cards 
-                  .row.row-cols-lg-2.row-cols-1
+                  .row.row-cols-md-2.row-cols-1
                     .col 
                       .lk__card 
                         .lk__card-img 

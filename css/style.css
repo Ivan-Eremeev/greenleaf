@@ -10386,6 +10386,7 @@ input[type=number]:focus {
   padding: 8px 16px;
   color: #4F4F4F;
   border-radius: 4px;
+  white-space: nowrap;
 }
 .lk__menu ul li a.active {
   background-color: #F3F3F6;
@@ -10561,6 +10562,7 @@ input[type=number]:focus {
   text-align: center;
 }
 .lk__no-order img {
+  max-width: 350px;
   margin-bottom: 40px;
 }
 .lk__no-order p {
@@ -10574,9 +10576,6 @@ input[type=number]:focus {
 }
 .lk__cards > .row > * {
   margin-top: 64px;
-}
-.lk__card {
-  margin-bottom: 64px;
 }
 .lk__card-img {
   height: 360px;
@@ -10615,6 +10614,109 @@ input[type=number]:focus {
   position: absolute;
   top: 10px;
   left: 5px;
+}
+@media (max-width: 1149.98px) {
+  .lk__card-img {
+    height: 250px;
+  }
+}
+@media (max-width: 991.98px) {
+  .lk__body {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .lk__sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  .lk__name {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .lk .title {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .lk__sidebar {
+    margin-bottom: 40px;
+  }
+  .lk__title {
+    margin-bottom: 24px;
+  }
+  .lk__subtitle {
+    margin-bottom: 16px;
+  }
+  .lk__form-block {
+    margin-bottom: 40px;
+  }
+  .lk__form-block > .row {
+    margin-top: -16px;
+  }
+  .lk__form-block > .row > * {
+    margin-top: 16px;
+  }
+  .lk__contact {
+    padding: 8px 0;
+  }
+  .lk__line {
+    margin-bottom: 40px;
+  }
+  .lk__no-order img {
+    max-width: 200px;
+  }
+  .lk__cards > .row {
+    margin-top: -40px;
+  }
+  .lk__cards > .row > * {
+    margin-top: 40px;
+  }
+  .lk__card-img {
+    margin-bottom: 24px;
+  }
+  .lk__card-content h1, .lk__card-content h2, .lk__card-content h3, .lk__card-content h4, .lk__card-content h5, .lk__card-content h6 {
+    margin-bottom: 16px;
+  }
+  .lk__menu ul li {
+    margin-bottom: 8px;
+  }
+  .lk__contact-item {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .lk__contact-name {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .lk__sidebar {
+    display: block;
+  }
+  .lk__name {
+    margin-bottom: 24px;
+  }
+  .lk__order {
+    display: block;
+  }
+  .lk__order-content {
+    margin-bottom: 16px;
+  }
+  .lk__order-images {
+    margin-bottom: 16px;
+  }
 }
 
 /* /lk */
