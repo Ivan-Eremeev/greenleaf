@@ -88,13 +88,13 @@ block content
                           input(type="text" placeholder="Улица")
                       .col-lg-4 
                         .input 
-                          input(type="text" placeholder="Дом")
+                          input(type="number" placeholder="Дом")
                       .col-lg-4 
                         .input 
-                          input(type="text" placeholder="Корпус")
+                          input(type="number" placeholder="Корпус")
                       .col-lg-4 
                         .input 
-                          input(type="text" placeholder="Квартира")
+                          input(type="number" placeholder="Квартира")
 
                   .lk__form-block 
                     .lk__subtitle Контактная информация:
@@ -114,7 +114,7 @@ block content
                       .lk__order-content 
                         .lk__order-title Заказ № 32378793-0109
                         .lk__order-date от 06.05.2023
-                        .lk__order-status в доставке
+                        .lk__order-status.lk__order-status--delivery в доставке
                       .lk__order-images 
                         .lk__order-img 
                           img(src="img/products/img-1.jpg", alt="")
@@ -127,9 +127,49 @@ block content
                     button(type="submit").btn.btn--blue Внести изменения
 
               .js-tabs-content(data-href="#lkHistory")
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit.
+
+                h2.lk__title История заказов
+                
+                .lk__orders 
+
+                  .lk__orders-row 
+
+                    .lk__order 
+                      .lk__order-content 
+                        .lk__order-title Заказ № 32378793-0109
+                        .lk__order-date от 06.05.2023
+                        .lk__order-status.lk__order-status--delivery в доставке
+                      .lk__order-images 
+                        .lk__order-img 
+                          img(src="img/products/img-1.jpg", alt="")
+                        .lk__order-img 
+                          img(src="img/products/img-2.jpg", alt="")
+
+                    .lk__order 
+                      .lk__order-content 
+                        .lk__order-title Заказ № 32378793-0112
+                        .lk__order-date от 06.05.2023
+                        .lk__order-status.lk__order-status--success доставлен
+                      .lk__order-images 
+                        .lk__order-img 
+                          img(src="img/products/img-1.jpg", alt="")
+                        .lk__order-img 
+                          img(src="img/products/img-2.jpg", alt="")
+
+                    .lk__order 
+                      .lk__order-content 
+                        .lk__order-title Заказ № 32378793-0109
+                        .lk__order-date от 06.05.2023
+                        .lk__order-status.lk__order-status--refund возврат
+                      .lk__order-images 
+                        .lk__order-img 
+                          img(src="img/products/img-1.jpg", alt="")
+                        .lk__order-img 
+                          img(src="img/products/img-2.jpg", alt="")
+
               .js-tabs-content(data-href="#lkPossibility")
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit. Dolorum, eveniet, adipisci! Aperiam soluta, harum obcaecati earum optio libero reprehenderit, fuga. Libero odio eaque deserunt recusandae, maxime quaerat autem! Eligendi inventore laudantium odit magni nihil eos soluta quisquam, unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus officia, aliquam, nemo est unde nesciunt ipsam iure numquam natus error!
+                h2.lk__title Возможности партнера
+                
       // /lk
 
       include blocks/scrool-up.pug

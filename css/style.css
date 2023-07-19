@@ -10500,12 +10500,22 @@ input[type=number]:focus {
 }
 .lk__order-status {
   display: inline-block;
-  padding: 4px 8px;
-  background-color: #DAECFF;
+  padding: 3px 8px 5px;
   border-radius: 30px;
   font-size: 12px;
   line-height: 18px;
+}
+.lk__order-status--delivery {
+  background-color: #DAECFF;
   color: #00598B;
+}
+.lk__order-status--success {
+  background-color: #EDF8E8;
+  color: #50BD38;
+}
+.lk__order-status--refund {
+  background-color: #FEEDED;
+  color: #FA4A4A;
 }
 .lk__order-images {
   display: -webkit-box;
@@ -10531,6 +10541,19 @@ input[type=number]:focus {
 .lk__order-img img {
   display: block;
   max-height: 100%;
+}
+.lk__orders-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: -32px;
+}
+.lk__orders-row > * {
+  margin-top: 32px;
 }
 
 /* /lk */
