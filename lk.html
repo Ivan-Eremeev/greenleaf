@@ -7,7 +7,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
-		<title>Навигация по страницам</title>
+		<title>Личный кабинет</title>
 		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
 		<link rel="stylesheet" href="css/plugins/select2.min.css">
@@ -260,26 +260,160 @@
 			</header>
 			<!--	/header-->
 			<div class="content"> 
-				<div class="navpage"> 
-					<div class="container">
-						<h1>Навигация по страницам</h1>
+				<!-- breadcrumbs-->
+				<div class="breadcrumbs">
+					<div class="container"> 
 						<ul> 
-							<li> <a href="home.html">Главная</a></li>
-							<li> <a href="catalog.html">Каталог</a></li>
-							<li> <a href="category.html">Категория</a></li>
-							<li> <a href="product.html">Страница товара</a></li>
-							<li> <a href="cart.html">Корзина</a></li>
-							<li> <a href="reservation.html">Оформление заказа</a></li>
-							<li> <a href="contact.html">Контакты</a></li>
-							<li> <a href="about.html">О компании Greenleaf</a></li>
-							<li> <a href="login.html">Авторизация</a></li>
-							<li> <a href="registration.html">Регистрация</a></li>
-							<li> <a href="news.html">Новости</a></li>
-							<li> <a href="news-page.html">Страница одной новости</a></li>
-							<li> <a href="lk.html">Личный кабинет</a></li>
+							<li> <a href="#">Главная</a></li>
+							<li> <span>Личный кабинет</span></li>
 						</ul>
 					</div>
 				</div>
+				<!-- /breadcrumbs-->
+				<!-- lk-->
+				<div class="lk js-tabs section section--mb120">
+					<div class="container"> 
+						<h1 class="title title--green">Личный кабинет</h1>
+						<div class="lk__body"> 
+							<div class="lk__sidebar"> 
+								<div class="lk__photo"> <img src="img/user.jpg" alt=""></div>
+								<div class="lk__name">Константин Константинов</div>
+								<div class="lk__menu"> 
+									<ul>
+										<li> <a class="js-tabs-trigger active" href="#lkData">Мои данные</a></li>
+										<li> <a class="js-tabs-trigger" href="#lkHistory">История заказов</a></li>
+										<li> <a class="js-tabs-trigger" href="#lkPossibility">Возможности партнера</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="lk__main"> 
+								<div class="js-tabs-content open" data-href="#lkData">
+									<h2 class="lk__title">Мои данные</h2>
+									<form class="lk__form" action="#"> 
+										<div class="lk__form-block"> 
+											<div class="lk__subtitle">Личная информация:</div>
+											<div class="row"> 
+												<div class="col-lg-6"> 
+													<div class="input"> 
+														<input type="text" placeholder="Имя">
+													</div>
+												</div>
+												<div class="col-lg-6"> 
+													<div class="input"> 
+														<input type="text" placeholder="Фамилия">
+													</div>
+												</div>
+												<div class="col-lg-6"> 
+													<div class="input input--has-icon">
+														<input type="text" placeholder="Дата рождения" id="airDatepickerBirthday">
+														<svg class="icon-calendar">
+															<use xlink:href="img/sprite.svg#calendar"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="col-lg-6"> 
+													<div class="lk__gender"> 
+														<div class="lk__gender-text">Пол: </div>
+														<label class="radio"> 
+															<input type="radio" name="gender"><span class="radio__circle"> </span><span>Мужской</span>
+														</label>
+														<label class="radio"> 
+															<input type="radio" name="gender"><span class="radio__circle"> </span><span>Мужской</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="lk__form-block"> 
+											<div class="lk__subtitle">Адрес доставки:</div>
+											<div class="row"> 
+												<div class="col-lg-6"> 
+													<div class="input"> 
+														<input type="text" placeholder="Город">
+													</div>
+												</div>
+												<div class="col-lg-6"> 
+													<div class="input"> 
+														<input type="text" placeholder="Улица">
+													</div>
+												</div>
+												<div class="col-lg-4"> 
+													<div class="input"> 
+														<input type="text" placeholder="Дом">
+													</div>
+												</div>
+												<div class="col-lg-4"> 
+													<div class="input"> 
+														<input type="text" placeholder="Корпус">
+													</div>
+												</div>
+												<div class="col-lg-4"> 
+													<div class="input"> 
+														<input type="text" placeholder="Квартира">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="lk__form-block"> 
+											<div class="lk__subtitle">Контактная информация:</div>
+											<div class="lk__contact"> 
+												<div class="lk__contact-item"> 
+													<div class="lk__contact-name">Номер телефона</div>
+													<div class="lk__contact-value">+ 7 (916) 111 12 22</div>
+													<div class="lk__contact-btn">изменить</div>
+												</div>
+												<div class="lk__contact-item"> 
+													<div class="lk__contact-name">Email</div>
+													<div class="lk__contact-value">info@mail.ru</div>
+													<div class="lk__contact-btn">изменить</div>
+												</div>
+											</div>
+										</div>
+										<div class="lk__form-block"> 
+											<div class="lk__subtitle">Активные заказы:</div>
+											<div class="lk__order"> 
+												<div class="lk__order-content"> 
+													<div class="lk__order-title">Заказ № 32378793-0109</div>
+													<div class="lk__order-date">от 06.05.2023</div>
+													<div class="lk__order-status">в доставке</div>
+												</div>
+												<div class="lk__order-images"> 
+													<div class="lk__order-img"> <img src="img/products/img-1.jpg" alt=""></div>
+													<div class="lk__order-img"> <img src="img/products/img-2.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div class="lk__line"> </div>
+										<div class="lk__btn"> 
+											<button class="btn btn--blue" type="submit">Внести изменения</button>
+										</div>
+									</form>
+								</div>
+								<div class="js-tabs-content" data-href="#lkHistory">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit.</p>
+								</div>
+								<div class="js-tabs-content" data-href="#lkPossibility">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit. Dolorum, eveniet, adipisci! Aperiam soluta, harum obcaecati earum optio libero reprehenderit, fuga. Libero odio eaque deserunt recusandae, maxime quaerat autem! Eligendi inventore laudantium odit magni nihil eos soluta quisquam, unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus officia, aliquam, nemo est unde nesciunt ipsam iure numquam natus error!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /lk-->
+				<!-- scrool-up-->
+				<div class="scrool-up js-scrollup">
+					<div class="scrool-up__arrow"> 
+						<svg class="icon-arrow-middle">
+							<use xlink:href="img/sprite.svg#arrow-middle"></use>
+						</svg>
+					</div>
+					<div class="scrool-up__dog"> 
+						<svg class="icon-dog">
+							<use xlink:href="img/sprite.svg#dog"></use>
+						</svg>
+					</div>
+				</div>
+				<!-- /scrool-up-->
 			</div>
 			<!-- footer-->
 			<footer class="footer">

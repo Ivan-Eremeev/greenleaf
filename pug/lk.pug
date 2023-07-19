@@ -1,0 +1,137 @@
+extends core/base.pug
+
+block title 
+  title Личный кабинет
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              span Личный кабинет
+      // /breadcrumbs
+
+      // lk
+      .lk.js-tabs.section.section--mb120
+        .container 
+          h1.title.title--green Личный кабинет
+          .lk__body 
+
+            .lk__sidebar 
+
+              .lk__photo 
+                img(src="img/user.jpg", alt="")
+
+              .lk__name Константин Константинов
+
+              .lk__menu 
+                ul
+                  li 
+                    a(href="#lkData").js-tabs-trigger.active Мои данные
+                  li 
+                    a(href="#lkHistory").js-tabs-trigger История заказов
+                  li 
+                    a(href="#lkPossibility").js-tabs-trigger Возможности партнера
+
+            .lk__main 
+
+              .js-tabs-content.open(data-href="#lkData")
+
+                h2.lk__title Мои данные
+
+                form(action="#").lk__form 
+
+                  .lk__form-block 
+                    .lk__subtitle Личная информация:
+                    .row 
+                      .col-lg-6 
+                        .input 
+                          input(type="text" placeholder="Имя")
+                      .col-lg-6 
+                        .input 
+                          input(type="text" placeholder="Фамилия")
+                      .col-lg-6 
+                        .input.input--has-icon
+                          input(type="text" placeholder="Дата рождения")#airDatepickerBirthday
+                          svg(class="icon-calendar")
+                            use(xlink:href="img/sprite.svg#calendar")
+                      .col-lg-6 
+                        .lk__gender 
+                          .lk__gender-text Пол: 
+                          label.radio 
+                            input(type="radio" name="gender")
+                            span.radio__circle 
+                            span Мужской
+                          label.radio 
+                            input(type="radio" name="gender")
+                            span.radio__circle 
+                            span Мужской
+
+                  .lk__form-block 
+                    .lk__subtitle Адрес доставки:
+                    .row 
+                      .col-lg-6 
+                        .input 
+                          input(type="text" placeholder="Город")
+                      .col-lg-6 
+                        .input 
+                          input(type="text" placeholder="Улица")
+                      .col-lg-4 
+                        .input 
+                          input(type="text" placeholder="Дом")
+                      .col-lg-4 
+                        .input 
+                          input(type="text" placeholder="Корпус")
+                      .col-lg-4 
+                        .input 
+                          input(type="text" placeholder="Квартира")
+
+                  .lk__form-block 
+                    .lk__subtitle Контактная информация:
+                    .lk__contact 
+                      .lk__contact-item 
+                        .lk__contact-name Номер телефона
+                        .lk__contact-value + 7 (916) 111 12 22
+                        .lk__contact-btn изменить
+                      .lk__contact-item 
+                        .lk__contact-name Email
+                        .lk__contact-value info@mail.ru
+                        .lk__contact-btn изменить
+
+                  .lk__form-block 
+                    .lk__subtitle Активные заказы:
+                    .lk__order 
+                      .lk__order-content 
+                        .lk__order-title Заказ № 32378793-0109
+                        .lk__order-date от 06.05.2023
+                        .lk__order-status в доставке
+                      .lk__order-images 
+                        .lk__order-img 
+                          img(src="img/products/img-1.jpg", alt="")
+                        .lk__order-img 
+                          img(src="img/products/img-2.jpg", alt="")
+
+                  .lk__line 
+
+                  .lk__btn 
+                    button(type="submit").btn.btn--blue Внести изменения
+
+              .js-tabs-content(data-href="#lkHistory")
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit.
+              .js-tabs-content(data-href="#lkPossibility")
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit. Dolorum, eveniet, adipisci! Aperiam soluta, harum obcaecati earum optio libero reprehenderit, fuga. Libero odio eaque deserunt recusandae, maxime quaerat autem! Eligendi inventore laudantium odit magni nihil eos soluta quisquam, unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus officia, aliquam, nemo est unde nesciunt ipsam iure numquam natus error!
+      // /lk
+
+      include blocks/scrool-up.pug
+
+    include core/footer.pug

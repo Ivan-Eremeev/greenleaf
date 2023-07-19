@@ -241,9 +241,13 @@ window.onload = function () {
   }
   benefitTextSlide();
 
-  // Air Datepicker | Календарь
+  // Air Datepicker | Календарь сортировка новостей
   new AirDatepicker('#airDatepicker', {
     range: true,
+  });
+
+  // Air Datepicker | Календарь выбора даты в личном кабинете
+  new AirDatepicker('#airDatepickerBirthday', {
   });
 
   // // Magnific Popup | Попап окна

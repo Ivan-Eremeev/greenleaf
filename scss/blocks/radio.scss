@@ -1,0 +1,27 @@
+/* radio */
+.radio { 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  input {
+    position: absolute;
+    visibility: hidden;
+    &:checked {
+      ~ .radio__circle {
+        border-width: 6px;
+      }
+    }
+  }
+  .radio__circle {
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 2px solid $primary_color;
+  }
+}
+/* /radio */

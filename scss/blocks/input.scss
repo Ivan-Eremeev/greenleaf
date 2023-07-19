@@ -5,6 +5,7 @@
     height: 56px;
     padding: 0 16px;
     border: 1px solid $border_color;
+    background-color: #fff;
     border-radius: 4px;
     font-size: 18px;
     line-height: 26px;
@@ -31,6 +32,23 @@
       top: 50%;
       right: 16px;
       transform: translate(0,-50%);
+    }
+    input {
+      padding-right: 50px;
+    }
+  }
+  &--has-icon {
+    position: relative;
+    svg {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translate(0,-50%);
+      fill: $primary_color;
+      pointer-events: none;
+      z-index: 1;
     }
     input {
       padding-right: 50px;
