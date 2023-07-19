@@ -10555,6 +10555,67 @@ input[type=number]:focus {
 .lk__orders-row > * {
   margin-top: 32px;
 }
+.lk__no-order {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.lk__no-order img {
+  margin-bottom: 40px;
+}
+.lk__no-order p {
+  margin-bottom: 40px;
+}
+.lk__no-order b {
+  font-weight: 600;
+}
+.lk__cards > .row {
+  margin-top: -64px;
+}
+.lk__cards > .row > * {
+  margin-top: 64px;
+}
+.lk__card {
+  margin-bottom: 64px;
+}
+.lk__card-img {
+  height: 360px;
+  margin-bottom: 32px;
+}
+.lk__card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.lk__card-content h1, .lk__card-content h2, .lk__card-content h3, .lk__card-content h4, .lk__card-content h5, .lk__card-content h6 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.lk__card-content p {
+  margin-bottom: 8px;
+}
+.lk__card-content b {
+  font-weight: 600;
+}
+.lk__card-content ul li {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.lk__card-content ul li:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #333533;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
 
 /* /lk */
 /* footer */
