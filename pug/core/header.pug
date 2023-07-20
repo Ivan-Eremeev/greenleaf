@@ -77,18 +77,99 @@ header#headerSticky.header
               use(xlink:href="img/sprite.svg#search")
 
         .header__controll 
-          .header__controll-item 
+        
+          .header__controll-item
             | Избранное
             .header__controll-icon 
               span 9
               svg(class="icon-heart")
                 use(xlink:href="img/sprite.svg#heart")
-          .header__controll-item 
+            .header__controll-drop 
+              .header__controll-drop-inner 
+                .header__controll-products 
+                  .header__controll-product 
+                    .header__controll-img 
+                      img(src="img/products/img-1.jpg", alt="")
+                    .header__controll-content 
+                      .header__controll-title Пробиотики из сухого верблюжьего молока TUODADA
+                      .header__controll-middle 
+                        .header__controll-price 1 200 Р
+                        .header__controll-counter 
+                          .counter.js-counter
+                            .counter__btn.js-counter-minus 
+                              svg(class="icon-minus")
+                                use(xlink:href="img/sprite.svg#minus")
+                            .counter__input.js-counter-input
+                              input(type="text" value="1" maxlength="3")
+                            .counter__btn.js-counter-plus 
+                              svg(class="icon-plus")
+                                use(xlink:href="img/sprite.svg#plus")
+                      .header__controll-bottom 
+                          span 1 200 Р / шт.
+                          span 25 баллов
+                    .header__controll-close 
+                .header__controll-result 
+                  span Итого: 
+                  span 2 400 Р
+                .header__controll-btn 
+                  a(href="#").btn.btn--blue Перейти в корзину
+
+          .header__controll-item
             | Корзина
             .header__controll-icon 
               svg(class="icon-cart")
                 use(xlink:href="img/sprite.svg#cart")
               span 1
+            .header__controll-drop 
+              .header__controll-drop-inner 
+                .header__controll-products 
+                  .header__controll-product 
+                    .header__controll-img 
+                      img(src="img/products/img-1.jpg", alt="")
+                    .header__controll-content 
+                      .header__controll-title Пробиотики из сухого верблюжьего молока TUODADA
+                      .header__controll-middle 
+                        .header__controll-price 1 200 Р
+                        .header__controll-counter 
+                          .counter.js-counter
+                            .counter__btn.js-counter-minus 
+                              svg(class="icon-minus")
+                                use(xlink:href="img/sprite.svg#minus")
+                            .counter__input.js-counter-input
+                              input(type="text" value="1" maxlength="3")
+                            .counter__btn.js-counter-plus 
+                              svg(class="icon-plus")
+                                use(xlink:href="img/sprite.svg#plus")
+                      .header__controll-bottom 
+                          span 1 200 Р / шт.
+                          span 25 баллов
+                    .header__controll-close 
+                  .header__controll-product 
+                    .header__controll-img 
+                      img(src="img/products/img-1.jpg", alt="")
+                    .header__controll-content 
+                      .header__controll-title Пробиотики из сухого верблюжьего молока TUODADA
+                      .header__controll-middle 
+                        .header__controll-price 1 200 Р
+                        .header__controll-counter 
+                          .counter.js-counter
+                            .counter__btn.js-counter-minus 
+                              svg(class="icon-minus")
+                                use(xlink:href="img/sprite.svg#minus")
+                            .counter__input.js-counter-input
+                              input(type="text" value="1" maxlength="3")
+                            .counter__btn.js-counter-plus 
+                              svg(class="icon-plus")
+                                use(xlink:href="img/sprite.svg#plus")
+                      .header__controll-bottom 
+                          span 1 200 Р / шт.
+                          span 25 баллов
+                    .header__controll-close 
+                .header__controll-result 
+                  span Итого: 
+                  span 2 400 Р
+                .header__controll-btn 
+                  a(href="#").btn.btn--blue Перейти в корзину
 
   .header__catalog 
     // catalog-menu

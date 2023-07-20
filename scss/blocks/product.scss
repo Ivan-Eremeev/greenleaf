@@ -17,12 +17,15 @@
     }
     #swiperProductThumb {
       width: 190px;
+      padding-bottom: 10px;
       margin-left: auto;
       margin-right: auto;
       overflow: hidden;
       .swiper-slide-thumb-active {
         .product__thumb {
-          border-color: $primary_color;
+          &:before {
+            opacity: 1;
+          }
         }
       }
     }
@@ -40,13 +43,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid transparent;
+    height: 60px;
     cursor: pointer;
     user-select: none;
     img {
+      display: block;
       max-height: 100%;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $primary_color;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      opacity: 0;
+    }
+    &--video {
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        background-color: rgba(80, 189, 56, 0.40);
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .video__play {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+      }
     }
   }
   &__info {
@@ -89,12 +125,51 @@
       margin-bottom: 16px;
     }
   }
+  &__video {
+    height: 476px;
+    .js-youtube {
+      height: 100%;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+      .video__play {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+      } 
+      &.active {
+        &:after {
+          display: none;
+        }
+        .video__play {
+          display: none;
+        }
+      }
+    }
+  }
   @include media-breakpoint-down(lg) {
     &__info {
       padding: 20px;
+      margin-bottom: 0;
     }
     &__price {
       margin-right: 10px;
+    }
+    &__text {
+      margin-bottom: 32px;
     }
   }
   @include media-breakpoint-down(md) {
@@ -102,7 +177,7 @@
     &__price {
       font-size: 30px;
     }
-    &__info {
+    &__text {
       margin-bottom: 24px;
     }
     &__info-head {
@@ -116,6 +191,9 @@
   }
   @include media-breakpoint-down(sm) {
     &__img {
+      height: 320px;
+    }
+    &__video {
       height: 320px;
     }
   }
