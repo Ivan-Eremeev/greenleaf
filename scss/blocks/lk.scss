@@ -172,6 +172,7 @@
   &__order-images {
     display: flex;
     margin-left: auto;
+    flex-wrap: wrap;
   }
   &__order-img {
     display: flex;

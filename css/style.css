@@ -10750,6 +10750,8 @@ input[type=number]:focus {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .lk__order-img {
   display: -webkit-box;
